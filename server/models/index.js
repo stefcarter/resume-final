@@ -1,4 +1,5 @@
-const Tech = require('./Tech');
-const Matchup = require('./Matchup');
+const user = require('./User');
+const exportingFiles =require ('./saveData');
+const resumetemp = require ('./template');
 
-module.exports = { Tech, Matchup };
+module.exports = {user, saveData, resumetemp};

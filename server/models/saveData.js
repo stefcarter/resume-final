@@ -11,3 +11,4 @@ const techSchema = new Schema({
 const Tech = model('Tech', techSchema);
 
 module.exports = Tech;
+//I dont think we need this model
