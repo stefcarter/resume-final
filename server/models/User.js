@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// notes from Tom on User tied to documentsXX
+
 // const rolesSchema = require("./Role")
 const userSchema = new Schema({
     username: {
