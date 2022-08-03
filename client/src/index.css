@@ -435,9 +435,17 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Text indents */
+.s-50 {
+  text-indent: 50px;
+}
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
   width: 100%;
+}
+
+.w-90 {
+  width: 90%;
 }
 
 .w-75 {
