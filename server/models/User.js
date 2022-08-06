@@ -18,7 +18,7 @@ const userSchema = new Schema({
 
         // validate look up later regex
         // email regex expression works.
-    },
+    }, 
     password: {
         type: String,
         required: true,
