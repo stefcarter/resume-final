@@ -14,12 +14,19 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true,
+        match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,"your email did not match the criteria" ]
+
         // validate look up later regex
+        // email regex expression works.
     },
     password: {
         type: String,
         required: true,
+        match: [/^([[0-9]])([!@#$%^&*])/]
         // validate 
+        // in order to validate/ match the user inputs to the suggested criteria a regex string is
+        //  used with the "match" syntax inorder to use the correct grouping filters. 
+        // the password regex ecpression needs work 
     },
 
 
