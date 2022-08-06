@@ -1,24 +1,20 @@
-const { Schema, model } = require('mongoose');
+const { template, model } = require('mongoose');
 
-const matchupSchema = new Schema({
-  tech1: {
-    type: String,
+const templateChoices = new template({
+  temp1: {
+    type: File,
     required: true,
   },
-  tech2: {
-    type: String,
+  temp2: {
+    type: File,
     required: true,
   },
-  tech1_votes: {
-    type: Number,
-    default: 0,
-  },
-  tech2_votes: {
-    type: Number,
-    default: 0,
-  },
+  temp3: {
+    type: File,
+    required: true,
+  }
 });
 
-const Matchup = model('Matchup', matchupSchema);
+const Matchup = model('template', templateChoices);
 
-module.exports = Matchup;
+module.exports = template;

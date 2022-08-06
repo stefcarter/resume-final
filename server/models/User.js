@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-// notes from Tom on User tied to documentsXX
+
 // const rolesSchema = require("./Role")
 const userSchema = new Schema({
     username: {
