@@ -1,7 +1,7 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-
+// install auth middleware add auth middleware line 
 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
