@@ -40,13 +40,13 @@ const Home = () => {
       </div>
       <div className="card-footer text-center m-3">
         <h2></h2>
-        <Link to="/matchup">
-          <button className="btn btn-lg btn-danger">One and Done</button>
+        <Link to="/login">
+          <button className="btn btn-lg btn-danger">Login</button>
         </Link>
         &nbsp;
         &nbsp;
         &nbsp;
-        <Link to="/matchup">
+        <Link to="/signup">
           <button className="btn btn-lg btn-danger">Create Account</button>
         </Link>
       </div>
