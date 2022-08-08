@@ -14,15 +14,16 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,"your email did not match the criteria" ]
+        match: [/([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,"your email did not match the criteria" ]
 
         // validate look up later regex
         // email regex expression works.
-    },
+    }, 
     password: {
         type: String,
         required: true,
-        match: [/^([[0-9]])([!@#$%^&*])/]
+        minlength: 6,
+        match: [/([[a-zA-Z0-9!]])([@#$%^&*])/, 'must meet password requirements']
         // validate 
         // in order to validate/ match the user inputs to the suggested criteria a regex string is
         //  used with the "match" syntax inorder to use the correct grouping filters. 
@@ -33,7 +34,7 @@ const userSchema = new Schema({
 
 });
 
-userSchema.pre('save', function (next) {
+userSchema.pre('save', function(next) {
     var user = this;
     console.log({ hookThis: user });
 
@@ -42,7 +43,7 @@ userSchema.pre('save', function (next) {
 
 
     // generate a salt
-    bcrypt.genUser(userSchema, function (err, salt) {
+    bcrypt.genUser(userSchema, function (err, user) {
         if (err) return next(err);
 
         // hash the password using our new salt
@@ -55,11 +56,35 @@ userSchema.pre('save', function (next) {
     });
 });
 
-userSchema.methods.comparePassword = function (candidatePassword, cb) {
-    bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
-        if (err) return cb(err);
-        cb(null, isMatch);
-    });
+userSchema.pre('insertMany', async function (next, docs) {
+    if (Array.isArray(docs) && docs.length > 0) {
+        const salt = await bcrypt.genSalt(SALT_WORK_FACTOR);
+
+        const hashedUsers = docs.map(async (user) => {
+            // hash the password using our new salt
+            const hashedPassword = await bcrypt.hash(user.password, salt);
+            user.password = hashedPassword;
+            return user;
+        });
+        const results = await Promise.all(hashedUsers);
+        // console.log(results);
+        next();
+    }
+    else {
+        return next(new Error("User list should not be empty"));
+    }
+});
+
+userSchema.methods.comparePassword = async function(candidatePassword, cb) {
+try{
+    const isMatch = await bcrypt.compare(candidatePassword, this.password);
+    console.log(isMatch);
+    return isMatch;
+}catch(err){
+        console.log(err);
+        return false;
+}
+
 };
 
 const User = model('user', userSchema);
