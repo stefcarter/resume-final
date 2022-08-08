@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import Home from './pages/Home';
-import Matchup from './pages/Matchup';
+import Home from './pages/home';
+import Matchup from './pages/matchup';
 import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
 import 'bulma/css/bulma.min.css'
