@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
-import login from './pages/Login';
-import signup from './pages/Signup';
-import Matchup from './pages/Matchup';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+// import Matchup from './pages/Matchup';
 import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
 import 'bulma/css/bulma.min.css'
