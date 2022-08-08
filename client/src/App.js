@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import Login from './pages/login';
+import Signup from './pages/signup';
 // import Matchup from './pages/Matchup';
 import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
-import 'bulma/css/bulma.min.css'
+// import 'bulma/css/bulma.min.css'
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
