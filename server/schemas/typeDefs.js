@@ -21,7 +21,7 @@ type User {
     }
 
 type Mutation {
-    createMatchup(tech1: Stting!, tech2: String!); Matchup
+    createMatchup(tech1: Stting!, tech2: String!): Matchup
     createVote(_id: string)
 
 createUser(name: String!, email: String!, password: String!): User
@@ -30,3 +30,5 @@ login(email: String!, password: String!): Token User
 `;
 
 module.exports = typeDefs;
+
+// line 27 note: potential error in line of code causing upload issues 
