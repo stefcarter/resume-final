@@ -24,13 +24,33 @@ function App() {
               element={<Home />}
             />
             <Route 
-              path="/login" 
+              path="login" 
               element={<login />}
             />
             <Route 
-              path="/signup" 
+              path="signup" 
               element={<signup />}
             />
+            <Route
+              path ="coverLetterPage"
+              element={<coverletterpage />}
+              />
+            <Route
+              path ="linkedinPage"
+              element={<linkedinpage />}
+              />
+          <Route
+              path ="resumePage"
+              element={<resumepage />}
+              />
+              <Route
+              path ="exportPage"
+              element={<resumepage />}
+              />
+               <Route
+              path ="userPage"
+              element={<user />}
+              />
             {/* <Route 
               path="/matchup/:id" 
               element={<Vote />}
@@ -40,6 +60,7 @@ function App() {
               element={<NotFound />}
             />
           </Routes>
+          
         </div>
       </Router>
     </ApolloProvider>
