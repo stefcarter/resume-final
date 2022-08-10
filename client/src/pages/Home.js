@@ -11,30 +11,24 @@ const Home = () => {
 
   return (
 
-    <div className="card bg-white card-rounded w-100 min-100-vh">
-    <nav class="navbar">
+    <div className="card bg-white card-rounded w-100 min-80-vh">
+    <nav class="navbar is-fullheight-with-navbar">
   <div class="container">
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-start ">
-       <Link to = '/create'>
-        <button class="navbar-item is-link is-inverted">
+        <a href="./create" class="navbar-item">
           Get Started!
-        </button>
-        </Link>
+        </a>
       </div>
-
-
-     
-        
 
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <Link to= '/login'>
+            <Link to= './login'>
             <button class="button is-info is-light">Login</button>
             </Link>
-            <Link to = '/signup'>
-            <a class="button is-info">Create Account</a>
+            <Link to = './signup'>
+            <button class="button is-info">Create Account</button>
             </Link>
           </div>
         </div>
@@ -49,9 +43,9 @@ const Home = () => {
       Career Planner
     </p>
     
-    <p>
+    {/* <p>
       This is where we can help you create a resume, cover letter or Linkedin!  Just signup or login and get started!
-    </p>
+    </p> */}
   </div>
 </section>
         {loading ? (
