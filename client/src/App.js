@@ -7,7 +7,7 @@ import Signup from './pages/signup';
 // import Matchup from './pages/Matchup';
 import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
-// import 'bulma/css/bulma.min.css'
+import 'bulma/css/bulma.min.css'
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
