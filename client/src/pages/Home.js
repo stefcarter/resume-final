@@ -16,10 +16,16 @@ const Home = () => {
   <div class="container">
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-start ">
-        <a class="navbar-item is-link is-inverted">
-          Home
-        </a>
+       <Link to = '/create'>
+        <button class="navbar-item is-link is-inverted">
+          Get Started!
+        </button>
+        </Link>
       </div>
+
+
+     
+        
 
       <div class="navbar-end">
         <div class="navbar-item">
@@ -42,6 +48,10 @@ const Home = () => {
     <p class="title">
       Career Planner
     </p>
+    
+    <p>
+      This is where we can help you create a resume, cover letter or Linkedin!  Just signup or login and get started!
+    </p>
   </div>
 </section>
         {loading ? (
@@ -60,6 +70,8 @@ const Home = () => {
           </ul>
         )}
       </div>
+
+
   );
 };
 
