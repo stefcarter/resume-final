@@ -48,6 +48,10 @@ const Home = () => {
     <p class="title">
       Career Planner
     </p>
+    
+    <p>
+      This is where we can help you create a resume, cover letter or Linkedin!  Just signup or login and get started!
+    </p>
   </div>
 </section>
         {loading ? (
