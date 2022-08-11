@@ -4,8 +4,11 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Login from './pages/login';
 import Signup from './pages/signup';
+
+// import Create from './page/create';
+
 // import Matchup from './pages/Matchup';
-import Vote from './pages/Vote';
+// import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
 import 'bulma/css/bulma.min.css'
 const client = new ApolloClient({
@@ -31,6 +34,10 @@ function App() {
               path="/signup" 
               element={<Signup />}
             />
+             {/* <Route 
+              path="/create" 
+              element={<Create />}
+            /> */}
             <Route
               path ="coverLetterPage"
               element={<coverletterpage />}
