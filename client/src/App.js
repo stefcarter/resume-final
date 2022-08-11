@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Login from './pages/login';
-import Signup from './pages/signup';
+import Signup from './pages/Signup';
 // import Create from './page/create';
 // import Matchup from './pages/Matchup';
 // import Vote from './pages/Vote';
