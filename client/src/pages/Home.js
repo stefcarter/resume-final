@@ -19,10 +19,7 @@ const Home = () => {
         <a href="./create" class="navbar-item">
           Get Started!
         </a>
-
       </div>
-      <div className="card-body m-5">
-        <h2 className="s-50">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.X</h2>
 
       <div class="navbar-end">
         <div class="navbar-item">
@@ -51,7 +48,6 @@ const Home = () => {
     </p> */}
   </div>
 </section>
->>>>>>> 2f5b2a2b916c4696e51938b4f60715828d1d24aa
         {loading ? (
           <div>Loading...</div>
         ) : (
@@ -68,19 +64,8 @@ const Home = () => {
           </ul>
         )}
       </div>
-      <div className="card-footer text-center m-3">
-        <h2></h2>
-        <Link to="/Login">
-          <button className="btn btn-lg btn-danger">Login</button>
-        </Link>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <Link to="/Signup">
-          <button className="btn btn-lg btn-danger">Create Account</button>
-        </Link>
-      </div>
-    </div>
+
+
   );
 };
 
