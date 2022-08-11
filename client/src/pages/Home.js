@@ -10,50 +10,18 @@ const Home = () => {
   const matchupList = data?.matchups || [];
 
   return (
-
     <div className="card bg-white card-rounded w-100 min-100-vh">
-    <nav class="navbar">
-  <div class="container">
-    <div id="navMenu" class="navbar-menu">
-      <div class="navbar-start ">
-       <Link to = '/create'>
-        <button class="navbar-item is-link is-inverted">
-          Get Started!
-        </button>
-        </Link>
+      <div className="card-header bg-dark text-center">
+        <h1>Welcome to </h1>
       </div>
+      <div className="card-body m-5">
+        <h2 className="s-50">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.X</h2>
 
+        <h2 className="s-50">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</h2>
 
-     
-        
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <Link to= '/login'>
-            <button class="button is-info is-light">Login</button>
-            </Link>
-            <Link to = '/signup'>
-            <a class="button is-info">Create Account</a>
-            </Link>
-          </div>
+        <div className="text-center">
+          examples place holder
         </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<section class="hero is-link is-fullheight-with-navbar">
-  <div class="hero-body">
-    <p class="title">
-      Career Planner
-    </p>
-    
-    <p>
-      This is where we can help you create a resume, cover letter or Linkedin!  Just signup or login and get started!
-    </p>
-  </div>
-</section>
         {loading ? (
           <div>Loading...</div>
         ) : (
@@ -70,8 +38,19 @@ const Home = () => {
           </ul>
         )}
       </div>
-
-
+      <div className="card-footer text-center m-3">
+        <h2></h2>
+        <Link to="/Login">
+          <button className="btn btn-lg btn-danger">Login</button>
+        </Link>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <Link to="/Signup">
+          <button className="btn btn-lg btn-danger">Create Account</button>
+        </Link>
+      </div>
+    </div>
   );
 };
 
