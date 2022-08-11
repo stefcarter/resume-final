@@ -29,7 +29,7 @@ const resolvers = {
     },
 
     Mutation: {
-
+        
         createMatchup: async (parent, args) => {
             const matchup = await Matchup.create(args);
             return matchup;
@@ -37,8 +37,9 @@ const resolvers = {
 
         createUser: async (parent, { name, email, password }) => {
             const user = await User.create({ name, email, password });
+            const token = signToken(profile);
 
-            return user;
+            return { token, profile };
         },
 
         login: async (parent, { name, email, password }) => {
