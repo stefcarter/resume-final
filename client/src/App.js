@@ -27,7 +27,7 @@ function App() {
             />
             <Route 
               path="/login" 
-              element={<Login />}
+              element={<login />}
             />
             <Route 
               path="/signup" 
