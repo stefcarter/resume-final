@@ -2,7 +2,7 @@
 
 ## Team Members Credit
 
-Stephen Carter: https://github.com/stefcarter
+Steffan Carter: https://github.com/stefcarter
 
 Gordon Draine IV: https://github.com/GordyD97
 
