@@ -9,7 +9,7 @@ type User {
 }
 
     type TokenUser {
-    token: String
+    token: ID!
     user: User
     }
 
@@ -21,11 +21,11 @@ type User {
     }
 
 type Mutation {
-    createMatchup(tech1: Stting!, tech2: String!): Matchup
-    createVote(_id: string)
+    
 
-createUser(name: String!, email: String!, password: String!): User
-login(email: String!, password: String!): Token User
+    createUser(name: String!, email: String!, password: String!): TokenUser
+    createUserNoToken(name: String!, email: String!, password: String!): User
+    login(email: String!, password: String!): TokenUser
 }
 `;
 
