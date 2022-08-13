@@ -6,8 +6,8 @@ const path = require('path');
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
-const { Tech } = require('../models');
-const techData = require('./techData.json');
+const { Template } = require('./models');
+const techData = require('./seeds/techData.json');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
