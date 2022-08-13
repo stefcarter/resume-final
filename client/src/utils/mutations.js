@@ -10,17 +10,17 @@ export const CREATE_MATCHUP = gql`
   }
 `;
 
-export const CREATE_VOTE = gql`
-  mutation createVote($_id: String!, $techNum: Int!) {
-    createVote(_id: $_id, techNum: $techNum) {
-      _id
-      tech1
-      tech2
-      tech1_votes
-      tech2_votes
-    }
-  }
-`;
+// export const CREATE_VOTE = gql`
+//   mutation createVote($_id: String!, $techNum: Int!) {
+//     createVote(_id: $_id, techNum: $techNum) {
+//       _id
+//       tech1
+//       tech2
+//       tech1_votes
+//       tech2_votes
+//     }
+//   }
+// `;
 
 export const CREATE_USER = gql`
   mutation createUser($name: String!, $email: String!, $password: String!) {

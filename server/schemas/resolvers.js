@@ -6,10 +6,10 @@ const { signToken } = require("../utils/auth");
 
 const resolvers = {
     Query: {
-        matchups: async (parent, { _id }) => {
-            const params = _id ? { _id } : {};
-            return Matchup.find(params);
-        },
+        // matchups: async (parent, { _id }) => {
+        //     const params = _id ? { _id } : {};
+        //     return Matchup.find(params);
+        // },
 
         users: async () => {
             return User.find({});
@@ -30,19 +30,22 @@ const resolvers = {
 
     Mutation: {
         
-        createMatchup: async (parent, args) => {
-            const matchup = await Matchup.create(args);
-            return matchup;
-        },
+        // createMatchup: async (parent, args) => {
+        //     const matchup = await Matchup.create(args);
+        //     return matchup;
+        // },
 
         createUser: async (parent, { name, email, password }) => {
             const user = await User.create({ name, email, password });
             const token = signToken(user);
 
-            return { token: token, user: user };
+            return { 
+                token: token, 
+                user: user 
+            };
         },
 
-        login: async (parent, { name, email, password }) => {
+        login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 
             if (!user) {
