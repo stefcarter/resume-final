@@ -23,6 +23,6 @@ const templateSchema = new Schema({
 
 });
 
-const Template = model('Tech', templateSchema);
+const Template = model('Template', templateSchema);
 
 module.exports = Template;
