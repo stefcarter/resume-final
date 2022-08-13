@@ -8,12 +8,14 @@ const db = require('./config/connection');
 
 const { Template } = require('./models');
 const techData = require('./seeds/techData.json');
+const { authMiddleware } = require('./utils/auth');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  context: authMiddleware
 });
 
 app.use(express.urlencoded({ extended: false }));
@@ -35,9 +37,9 @@ const startApolloServer = async (typeDefs, resolvers) => {
   
   db.once('open', () => {
     app.get('/seedDatabase', async (req, res) => {
-      await Tech.deleteMany({});
+      await Template.deleteMany({});
 
-    const technologies = await Tech.insertMany(techData);
+    const technologies = await Template.insertMany(techData);
 
     console.log('Technologies seeded!');
     res.json(technologies);
