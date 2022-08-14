@@ -29,5 +29,3 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
-
-// line 27 note: potential error in line of code causing upload issues 
