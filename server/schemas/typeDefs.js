@@ -27,5 +27,5 @@ const typeDefs = gql`
         login(email: String!, password: String!): TokenUser
     }
 `;
-
+// add new operator object for the tempalte database
 module.exports = typeDefs;

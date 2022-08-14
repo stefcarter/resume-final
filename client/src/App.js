@@ -4,6 +4,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Signup from './pages/signup';
 import Login from './pages/login';
+import Coverletterpage from './pages/coverLetterPage';
 // import Create from './page/create';
 
 // import Matchup from './pages/Matchup';
@@ -38,22 +39,22 @@ function App() {
               element={<Create />}
             /> */}
             <Route
-              path ="coverLetterPage"
-              element={<coverletterpage />}
+              path ="/coverLetterPage"
+              element={<Coverletterpage />}
               />
             <Route
               path ="linkedinPage"
               element={<linkedinpage />}
               />
-          <Route
+            <Route
               path ="resumePage"
               element={<resumepage />}
               />
-              <Route
+            <Route
               path ="exportPage"
               element={<resumepage />}
               />
-               <Route
+            <Route
               path ="userPage"
               element={<user />}
               />
