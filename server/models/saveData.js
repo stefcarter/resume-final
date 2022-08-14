@@ -8,7 +8,7 @@ const techSchema = new Schema({
   },
 });
 
-const Tech = model('Tech', techSchema);
+const Template = model('Template', techSchema);
 
-module.exports = Tech;
+module.exports = Template;
 //I dont think we need this model
