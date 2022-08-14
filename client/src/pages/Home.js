@@ -25,7 +25,7 @@ const Home = () => {
         <div class="navbar-item">
           <div class="buttons">
             <Link to= './login'>
-            <button class="button is-info is-light">Login</button>
+            <button class="button is-info is-light">Log in</button>
             </Link>
             <Link to = './signup'>
             <button class="button is-info">Create Account</button>
