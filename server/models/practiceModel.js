@@ -12,11 +12,14 @@ const UserSchema = new Schema({
         type: String,
         required: true,
         unique: true,
+        match: [/.+@.+\..+/, 'Must match an email address!'],
         // validate look up later regex
     },
     password: {
         type: String,
         required: true,
+        minlength: 6,
+        match: [/[a-zA-Z0-9!-]+/i, "Must use a-z or 0-9 or ! or -"]
         // validate 
     },
 

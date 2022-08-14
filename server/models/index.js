@@ -1,6 +1,6 @@
 const user = require('./User');
 const exportingFiles =require ('./saveData');
-const resumetemp = require ('./template');
+// const resumetemp = require ('./template');
 
 
-module.exports = {user, exportingFiles, resumetemp};
+module.exports = {user, exportingFiles};

@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-
+const SALT_WORK_FACTOR = 7;
 
 // const rolesSchema = require("./Role")
 const userSchema = new Schema({
@@ -14,7 +14,7 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        match: [/([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,"your email did not match the criteria" ]
+        match: [/([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,"Email must does not meet requirements" ]
 
         // validate look up later regex
         // email regex expression works.
@@ -23,15 +23,12 @@ const userSchema = new Schema({
         type: String,
         required: true,
         minlength: 6,
-        match: [/([[a-zA-Z0-9!]])([@#$%^&*])/, 'must meet password requirements']
+        match: [/([[a-zA-Z0-9!]])([@#$%^&*])/, 'Password not strong enough']
         // validate 
         // in order to validate/ match the user inputs to the suggested criteria a regex string is
         //  used with the "match" syntax inorder to use the correct grouping filters. 
         // the password regex expression needs work 
     },
-
-
-
 });
 
 userSchema.pre('save', function(next) {
@@ -75,14 +72,14 @@ userSchema.pre('insertMany', async function (next, docs) {
     }
 });
 
-userSchema.methods.comparePassword = async function(candidatePassword, cb) {
+userSchema.methods.comparePassword = async function(candidatePassword) {
 try{
     const isMatch = await bcrypt.compare(candidatePassword, this.password);
     console.log(isMatch);
     return isMatch;
 }catch(err){
-        console.log(err);
-        return false;
+    console.log(err);
+    return false;
 }
 
 };
