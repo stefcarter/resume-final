@@ -27,7 +27,7 @@ const userSchema = new Schema({
         // validate 
         // in order to validate/ match the user inputs to the suggested criteria a regex string is
         //  used with the "match" syntax inorder to use the correct grouping filters. 
-        // the password regex ecpression needs work 
+        // the password regex expression needs work 
     },
 
 
