@@ -12,7 +12,7 @@ const CoverLetterPage = () => {
 
     return (
 
-    <div className="card bg-white card-rounded w-100 min-80-vh">
+    <div className="card bg-white card-rounded w-100 min-90%-vh">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
@@ -40,12 +40,12 @@ const CoverLetterPage = () => {
                         <div class="buttons">
                             <Link to =".login">
                             <button class="button is-primary">
-                                <strong>Sign up</strong>
+                                <strong>Log in</strong>
                             </button>
                             </Link>
                             <Link to = "./signup">
-                            <button class="button is-light">
-                                Log in
+                            <button class="button is-info">
+                                Create Account
                             </button>
                             </Link>
                         </div>
