@@ -35,7 +35,7 @@ const Login = () => {
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <Link to = '.login'>
+          <Link to = './login'>
           <button class="button is-info is-light">
             <strong>Log in</strong>
           </button>
@@ -99,6 +99,21 @@ const Login = () => {
         </button>
       </div>
       </div>
+      {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <ul className="square">
+            {matchupList.map((matchup) => {
+              return (
+                <li key={matchup._id}>
+                  <Link to={{ pathname: `/matchup/${matchup._id}` }}>
+                    {matchup.tech1} vs. {matchup.tech2}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        )}
     </div>
   );
 };
