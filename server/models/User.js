@@ -56,7 +56,7 @@ userSchema.pre('save', function(next) {
 userSchema.pre('insertMany', async function (next, docs) {
     if (Array.isArray(docs) && docs.length > 0) {
         const salt = await bcrypt.genSalt(SALT_WORK_FACTOR);
-
+    // take off the salt ^^^^^
         const hashedUsers = docs.map(async (user) => {
             // hash the password using our new salt
             const hashedPassword = await bcrypt.hash(user.password, salt);

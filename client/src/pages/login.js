@@ -35,12 +35,12 @@ const Login = () => {
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <Link to = './login'>
+          <Link to = '/login'>
           <button class="button is-info is-light">
             <strong>Log in</strong>
           </button>
           </Link>
-          <Link to = './signup'>
+          <Link to = '/signup'>
           <button class="button is-info">
             Create Account
           </button>
@@ -56,7 +56,7 @@ const Login = () => {
         <div class="field">
           <label class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
-            {/* id for grabbing email is loginEmail */}
+            {/* id for grabbing email is loginEmail  */}
             <input
               id="loginEmail"
               class="input is-primary"
@@ -77,7 +77,7 @@ const Login = () => {
             Password
           </label>
           <div class="control has-icons-left has-icons-right">
-            {/* Id for grabbing password is loginPassword */}
+            {/* Id for grabbing password is loginPassword  */}
             <input
               id="loginPassword"
               type="password"
