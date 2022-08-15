@@ -52,30 +52,26 @@ const CoverLetterPage = () => {
                     </div>
                 </div>
         </nav>
-        
+
          <div class="control">
             <input class="input is-focused" type="text" placeholder="Focused input"></input>
         </div>
-    </div>
-
-{loading ? (
-            <div> Loading...</div >
-        ) : (
-    <ul className="square">
-        {matchupList.map((matchup) => {
-            return (
-                <li key={matchup._id}>
-                    <Link to={{ pathname: `/matchup/${matchup._id}` }}>
-                        {matchup.tech1} vs. {matchup.tech2}
-                    </Link>
-                </li>
-            );
-        })}
-    </ul>
+            {loading ? (
+                <div> Loading...</div >
+            ) : (
+                <ul className="square">
+                    {matchupList.map((matchup) => {
+                        return (
+                            <li key={matchup._id}>
+                                <Link to={{ pathname: `/matchup/${matchup._id}` }}>
+                                    {matchup.tech1} vs. {matchup.tech2}
+                                </Link>
+                            </li>
+                        );
+                    })}
+                </ul>
 )}
-    </div >
-
-
+</div>
 );
 };
 
