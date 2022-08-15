@@ -13,9 +13,9 @@ const CoverLetterPage = () => {
     return (
 
     <div className="card bg-white card-rounded w-100 min-90%-vh">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
+        <nav className="navbar" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand">
+                <a className="navbar-item" href="https://bulma.io">
                     <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
                 </a>
 
