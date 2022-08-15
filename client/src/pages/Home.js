@@ -24,10 +24,10 @@ const Home = () => {
             <div class="navbar-end">
               <div class="navbar-item">
                 <div class="buttons">
-                  <Link to='./login'>
+                  <Link to='/login'>
                     <button class="button is-info is-light">Log in</button>
                   </Link>
-                  <Link to='./signup'>
+                  <Link to='/signup'>
                     <button class="button is-info">Create Account</button>
                   </Link>
                 </div>
