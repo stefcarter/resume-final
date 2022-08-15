@@ -37,25 +37,15 @@ const Login = () => {
       <div class="navbar-item">
         <div class="buttons">
           <Link to = '/login'>
-          <button class="button is-info is-light">
-
-    <div className="navbar-end">
-      <div className="navbar-item">
-        <div className="buttons">
-          <Link to = '/login'>
-          <button className="button is-info is-light">
-
-            <strong>Log in</strong>
+          <button class="button is-info is-light"> 
+          <strong>Log in</strong>
           </button>
           </Link>
           <Link to = '/signup'>
-
           <button class="button is-info">
-
-          <button className="button is-info">
-
-            Create Account
-          </button>
+            <strong>create Account</strong>
+            </button>
+  
           </Link>
         </div>
       </div>
