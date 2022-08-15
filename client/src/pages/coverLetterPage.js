@@ -38,12 +38,12 @@ const CoverLetterPage = () => {
                 <div className="navbar-end">
                     <div className="navbar-item">
                         <div className="buttons">
-                            <Link to =".login">
+                            <Link to ="/login">
                             <button className="button is-primary">
                                 <strong>Log in</strong>
                             </button>
                             </Link>
-                            <Link to = "./signup">
+                            <Link to = "/signup">
                             <button className="button is-info">
                                 Create Account
                             </button>
