@@ -56,6 +56,18 @@ const CoverLetterPage = () => {
          <div className="control">
             <input className="input is-focused" type="text" placeholder="Focused input"></input>
         </div>
+        <div class="container">
+            <div id="intro">
+            <textarea class="textarea" placeholder="Introductory Paragraph" rows="10"></textarea>
+            </div>
+            <div id="middle">
+            <textarea class="textarea" placeholder="Middle Paragraph" rows="10"></textarea>
+            </div>
+            <div id="conclusion">
+            <textarea class="textarea" placeholder="Closure Paragraph" rows="10"></textarea>
+            </div>
+            <p id="regards">Sincerely,</p>
+        </div>
             {loading ? (
                 <div> Loading...</div >
             ) : (
