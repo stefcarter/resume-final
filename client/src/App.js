@@ -40,7 +40,7 @@ function App() {
               path="/Create" 
               element={<Create />}
             />
-            <Route
+           <Route
               path ="/coverLetterPage"
               element={<CoverLetterPage />}
               />
