@@ -12,10 +12,10 @@ const CoverLetterPage = () => {
 
     return (
 
-    <div className="card bg-white card-rounded w-100 min-90%-vh">
-        <nav className="navbar" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-                <a className="navbar-item" href="https://bulma.io">
+    <div className="card bg-white card-rounded w-100 min-80-vh">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
                     <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
                 </a>
 
@@ -35,17 +35,17 @@ const CoverLetterPage = () => {
                 </div>
             </div>
 
-                <div className="navbar-end">
-                    <div className="navbar-item">
-                        <div className="buttons">
-                            <Link to ="/login">
-                            <button className="button is-primary">
-                                <strong>Log in</strong>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <Link to =".login">
+                            <button class="button is-primary">
+                                <strong>Sign up</strong>
                             </button>
                             </Link>
-                            <Link to = "/signup">
-                            <button className="button is-info">
-                                Create Account
+                            <Link to = "./signup">
+                            <button class="button is-light">
+                                Log in
                             </button>
                             </Link>
                         </div>
