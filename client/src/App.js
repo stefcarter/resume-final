@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Signup from './pages/signup';
 import Login from './pages/login';
 
-import Coverletterpage from './pages/coverLetterPage';
+import CoverLetterPage from './pages/coverLetterPage';
 import LinkedinPage from './pages/linkedinPage';
 import Create from './pages/create';
 
