@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Signup from './pages/signup';
 import Login from './pages/login';
 import Coverletterpage from './pages/coverLetterPage';
+import LinkedinPage from './pages/linkedinPage';
 // import Create from './page/create';
 
 // import Matchup from './pages/Matchup';
@@ -44,7 +45,7 @@ function App() {
               />
             <Route
               path ="linkedinPage"
-              element={<linkedinpage />}
+              element={<LinkedinPage />}
               />
             <Route
               path ="resumePage"
