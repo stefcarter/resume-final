@@ -75,7 +75,4 @@ module.exports = {
   
 // Call the async function to start the server
   startApolloServer(typeDefs, resolvers);
-<<<<<<< HEAD
-=======
-  
->>>>>>> 64d625120d328221f13a970f383686546b9626d3
+
