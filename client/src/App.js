@@ -4,7 +4,11 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Signup from './pages/signup';
 import Login from './pages/login';
+
 import ResumePage from './pages/resumePage';
+
+
+
 import CoverLetterPage from './pages/coverLetterPage';
 import LinkedinPage from './pages/linkedinPage';
 import Create from './pages/create';
@@ -40,7 +44,7 @@ function App() {
               path="/Create" 
               element={<Create />}
             />
-            <Route
+           <Route
               path ="/coverLetterPage"
               element={<CoverLetterPage />}
               />

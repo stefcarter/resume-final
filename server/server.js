@@ -51,12 +51,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
     })
   })
   };
-const { MongoClient } = require("mongodb");
-const Db = process.env.ATLAS_URI;
-const client = new MongoClient(Db, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+
 
 var _db;
 // adding mongo export 
@@ -80,4 +75,4 @@ module.exports = {
   
 // Call the async function to start the server
   startApolloServer(typeDefs, resolvers);
-  startMongoClient(typeDefs, resolvers);
+
