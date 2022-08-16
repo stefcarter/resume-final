@@ -10,7 +10,7 @@ const Signup = () => {
   const matchupList = data?.matchups || [];
 
   return (
-    <div className="card bg-white card-rounded w-100 min-90%-vh" >
+    <div className="card is-shadowless bg-white card-rounded w-100 min-90%-vh" >
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
