@@ -4,9 +4,10 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Signup from './pages/signup';
 import Login from './pages/login';
+
 import Coverletterpage from './pages/coverLetterPage';
 import LinkedinPage from './pages/linkedinPage';
-// import Create from './page/create';
+import Create from './pages/create';
 
 // import Matchup from './pages/Matchup';
 // import Vote from './pages/Vote';
@@ -35,13 +36,13 @@ function App() {
               path="/signup" 
               element={<Signup />}
             />
-             {/* <Route 
-              path="/create" 
+             <Route 
+              path="/Create" 
               element={<Create />}
-            /> */}
+            />
             <Route
               path ="/coverLetterPage"
-              element={<Coverletterpage />}
+              element={<CoverLetterPage />}
               />
             <Route
               path ="linkedinPage"
@@ -59,10 +60,6 @@ function App() {
               path ="userPage"
               element={<user />}
               />
-            {/* <Route 
-              path="/matchup/:id" 
-              element={<Vote />}
-            /> */}
             <Route 
               path="*"
               element={<NotFound />}
