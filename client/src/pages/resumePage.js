@@ -12,7 +12,7 @@ const ResumePage = () => {
         const matchupList = data?.matchups || [];
 
         return (
-            <div className="card bg-white card-rounded w-100 min-90%-vh">
+            <div className="card is-shadowless bg-white card-rounded w-100 min-90%-vh">
             <nav className="navbar" role="navigation" aria-label="main navigation"></nav>
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
@@ -29,7 +29,7 @@ const ResumePage = () => {
                 <div class="dropdown is-active">
   <div class="dropdown-trigger">
     <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-      <span>Dropdown button</span>
+      <span>What Field?</span>
       <span class="icon is-small">
         <i class="fas fa-angle-down" aria-hidden="true"></i>
       </span>
@@ -38,26 +38,25 @@ const ResumePage = () => {
   <div class="dropdown-menu" id="dropdown-menu" role="menu">
     <div class="dropdown-content">
       <a href="#" class="dropdown-item">
-        Dropdown item
+        Mechanic
       </a>
       <a class="dropdown-item">
         Tech
       </a>
-      <a href="#" class="dropdown-item is-active">
+      <a href="#" class="dropdown-item ">
         Real Estate
       </a>
       <a href="#" class="dropdown-item">
         Engineer
       </a>
-      <hr class="dropdown-divider"></hr>
-      <a href="#" class="dropdown-item">
-        Mechanic
-      </a>
+     
+     
     </div>
   </div>
 </div>
                 </div>
         )
 };
+
 
 export default ResumePage;
