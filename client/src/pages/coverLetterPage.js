@@ -12,7 +12,7 @@ const CoverLetterPage = () => {
 
     return (
 
-    <div className="card bg-white card-rounded w-100 min-90%-vh">
+    <div className="card bg-white card-rounded w-100 min-80-vh">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
@@ -27,8 +27,8 @@ const CoverLetterPage = () => {
             </div>
 
             <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">
+                <div className="navbar-start">
+                    <a className="navbar-item">
                         Home
                     </a>
                     
@@ -40,12 +40,12 @@ const CoverLetterPage = () => {
                         <div class="buttons">
                             <Link to =".login">
                             <button class="button is-primary">
-                                <strong>Log in</strong>
+                                <strong>Sign up</strong>
                             </button>
                             </Link>
                             <Link to = "./signup">
-                            <button class="button is-info">
-                                Create Account
+                            <button class="button is-light">
+                                Log in
                             </button>
                             </Link>
                         </div>
@@ -53,8 +53,8 @@ const CoverLetterPage = () => {
                 </div>
         </nav>
 
-         <div class="control">
-            <input class="input is-focused" type="text" placeholder="Focused input"></input>
+         <div className="control">
+            <input className="input is-focused" type="text" placeholder="Focused input"></input>
         </div>
             {loading ? (
                 <div> Loading...</div >
