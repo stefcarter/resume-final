@@ -11,50 +11,49 @@ const Login = () => {
 
   return (
     <div className="card bg-white card-rounded w-100 min-90%-vh">
-<nav className="navbar" role="navigation" aria-label="main navigation">
-  <div className="navbar-brand">
-    <a className="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
-    </a>
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+          <a className="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
+          </a>
 
-    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-{/* Is the home going to take the user to landing page or the create page? Carter says the landing page for now */}
-  <div id="navbarBasicExample" className="navbar-menu">
-    <div className="navbar-start">
-      <a href="./" className="navbar-item is-info is-outlined">
-        Home
-      </a>
-
-    </div>
-
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <Link to = '/login'>
-          <button class="button is-info is-light"> 
-          <strong>Log in</strong>
-          </button>
-          </Link>
-          <Link to = '/signup'>
-          <button class="button is-info">
-            <strong>create Account</strong>
-            </button>
-  
-          </Link>
+          <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-      </div>
-    </div>
-  </div>
-</nav>
-     
+        {/* Is the home going to take the user to landing page or the create page? Carter says the landing page for now */}
+        <div id="navbarBasicExample" className="navbar-menu">
+          <div className="navbar-start">
+            <a href="/" className="navbar-item is-info is-outlined">
+              Home
+            </a>
+
+          </div>
+
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <Link to='/login'>
+                  <button class="button is-info is-light">
+                    <strong>Log in</strong>
+                  </button>
+                </Link>
+                <Link to='/signup'>
+                  <button class="button is-info">
+                    <strong>Create Account</strong>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div className="card" id="loginContainerCard">
-      <h1> Login!! </h1>
+        <h1> Login!! </h1>
         <div className="field">
           <label className="label">Email</label>
           <div className="control has-icons-left has-icons-right">
@@ -86,7 +85,7 @@ const Login = () => {
               className="input is-primary"
               placeholder="Password"
             ></input>
-          {/* fix the icons not showing up in the input fields down below */}
+            {/* fix the icons not showing up in the input fields down below */}
             <span className="icon is-small is-left">
               <i className="fas fa-envelope"></i>
             </span>
@@ -96,26 +95,26 @@ const Login = () => {
           </div>
         </div>
         <div id="btnContainer">
-        <button className="button is-success" id="loginBtn">
-          Login
-        </button>
-      </div>
+          <button className="button is-success" id="loginBtn">
+            Login
+          </button>
+        </div>
       </div>
       {loading ? (
-          <div>Loading...</div>
-        ) : (
-          <ul className="square">
-            {matchupList.map((matchup) => {
-              return (
-                <li key={matchup._id}>
-                  <Link to={{ pathname: `/matchup/${matchup._id}` }}>
-                    {matchup.tech1} vs. {matchup.tech2}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        )}
+        <div>Loading...</div>
+      ) : (
+        <ul className="square">
+          {matchupList.map((matchup) => {
+            return (
+              <li key={matchup._id}>
+                <Link to={{ pathname: `/matchup/${matchup._id}` }}>
+                  {matchup.tech1} vs. {matchup.tech2}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 };
