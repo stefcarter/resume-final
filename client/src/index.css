@@ -1,4 +1,13 @@
-/* Login page css code */
+/* General Navbar css starts here */
+.navbarContainer{
+  display: block;
+  top:0;
+}
+
+
+/* General Navbar css ends here */
+
+/* Login page css starts here */
 #loginContainerCard{
 max-width: 550px;
 margin: auto;
@@ -13,8 +22,9 @@ padding-left: 50px;
   padding-top: 20px;
 }
 
+/* Login page css ends here */
 
-/*Signup page css code*/
+/*Signup page css starts here*/
 #singupContainerCard{
 max-width: 550px;
 margin: auto;
@@ -34,16 +44,25 @@ background-color: #121212;
   padding-top: 20px;
 }
 
-.navbarContainer{
-  display: block;
-  top:0;
+/*Signup page css ends here*/
+
+/*coverLetterPage css starts here*/
+
+/*coverLetterPage css ends here*/
+
+/* Create Page css starts */
+
+#templateNavMenu{
+  bottom: 50px;
+  left: 50px;
+  top: 150px;
+  max-width:fit-content;
+  border-radius: 5px;
 }
 
-/*coverLetterPage*/
 
+/* Create Page css starts */
 
-
-/* body{
-  background-color: #121212;
-} */
 /*Loading skeleton CSS*/
+
+/* Media Queries here */

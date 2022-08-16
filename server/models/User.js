@@ -29,6 +29,7 @@ const userSchema = new Schema({
         //  used with the "match" syntax inorder to use the correct grouping filters. 
         // the password regex expression needs work 
     },
+    savedResumes: [resumeSchema]
 });
 
 userSchema.pre('save', function(next) {

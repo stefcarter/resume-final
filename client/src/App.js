@@ -4,12 +4,10 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Signup from './pages/signup';
 import Login from './pages/login';
-<<<<<<< HEAD
+
+import CoverLetterPage from './pages/coverLetterPage';
+import LinkedinPage from './pages/linkedinPage';
 import Create from './pages/create';
-=======
-import Coverletterpage from './pages/coverLetterPage';
->>>>>>> e0fa5c7a99acfc9caedca2b650d884cd8ef69bc4
-// import Create from './page/create';
 
 // import Matchup from './pages/Matchup';
 // import Vote from './pages/Vote';
@@ -44,11 +42,11 @@ function App() {
             />
             <Route
               path ="/coverLetterPage"
-              element={<Coverletterpage />}
+              element={<CoverLetterPage />}
               />
             <Route
               path ="linkedinPage"
-              element={<linkedinpage />}
+              element={<LinkedinPage />}
               />
             <Route
               path ="resumePage"
