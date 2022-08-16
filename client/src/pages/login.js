@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_MATCHUPS } from "../utils/queries";
 
+// Make the navbar for the login and signup page a component
 const Login = () => {
   const { loading, data } = useQuery(QUERY_MATCHUPS, {
     fetchPolicy: "no-cache",
@@ -10,7 +11,7 @@ const Login = () => {
   const matchupList = data?.matchups || [];
 
   return (
-    <div className="card bg-white card-rounded w-100 min-90%-vh">
+    <div className="card is-shadowless bg-white card-rounded w-100 min-90%-vh">
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
