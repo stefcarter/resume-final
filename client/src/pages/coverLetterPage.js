@@ -54,37 +54,45 @@ const CoverLetterPage = () => {
         </nav>
 
         
-        <div class="container">
-            <p id="autoInput">Dear</p>
-            <div id="intro">
-                <textarea class="textarea" placeholder="Company/Recruiter Name" rows="1"></textarea>
-            </div>
-            <div class="field">
-                <div class="box" id="openingSuggestions">
-                    - Make sure to introduce yourself
-                    - Don't forget to thank them for giving you the opportunity to work for them
-                    - Consider talking lightly about your credentials
+        <div class="columns">
+            <div class="column">
+                <p id="autoInput">Dear</p>
+                <div id="intro">
+                    <textarea class="textarea" placeholder="Company/Recruiter Name" rows="1"></textarea>
                 </div>
-                <textarea class="textarea" id="introParagraph" placeholder="Introductory Paragraph" rows="10"></textarea>
             </div>
-            <div class="field">
-                <div class ="box" id="midParaSuggestions">
-                    - Be sure to explain why you would be a good fit for their company
-                    - Go into more details about your credentials
-                    - Gloss over personal accomplishments that relate to the position at hand
-                    - Consider describing yourself with positive personality traits
-                    - e.g. "outstanding leadership skills", "very cooperative in teams", "goal driven" etc.
+            <div class="column">
+                <div class="field">
+                    <div class="box" id="openingSuggestions">
+                        - Make sure to introduce yourself
+                        - Don't forget to thank them for giving you the opportunity to work for them
+                        - Consider talking lightly about your credentials
+                    </div>
+                    <textarea class="textarea" id="introParagraph" placeholder="Introductory Paragraph" rows="10"></textarea>
                 </div>
-                <textarea class="textarea" id="middleParagraph" placeholder="Middle Paragraph" rows="10"></textarea>
             </div>
-            <div class="field">
-                <div class="box" id="closingSuggestions">
-                    - This paragraph should act as a wrap to your cover letter
-                    - You should summarize the points you made throughout the paper
-                    - Be sure to thank them again for allowing you the opportunity to work for them
-                    - Consider showing your eagerness to stay in contact with the recruiter/company
+            <div class="column">
+                <div class="field">
+                    <div class ="box" id="midParaSuggestions">
+                        - Be sure to explain why you would be a good fit for their company
+                        - Go into more details about your credentials
+                        - Gloss over personal accomplishments that relate to the position at hand
+                        - Consider describing yourself with positive personality traits
+                        - e.g. "outstanding leadership skills", "very cooperative in teams", "goal driven" etc.
+                    </div>
+                    <textarea class="textarea" id="middleParagraph" placeholder="Middle Paragraph" rows="10"></textarea>
                 </div>
-                <textarea class="textarea" id="closingParagraph" placeholder="Closure Paragraph" rows="10"></textarea>
+            </div>
+            <div class="column">
+                <div class="field">
+                    <div class="box" id="closingSuggestions">
+                        - This paragraph should act as a wrap to your cover letter
+                        - You should summarize the points you made throughout the paper
+                        - Be sure to thank them again for allowing you the opportunity to work for them
+                        - Consider showing your eagerness to stay in contact with the recruiter/company
+                    </div>
+                    <textarea class="textarea" id="closingParagraph" placeholder="Closure Paragraph" rows="10"></textarea>
+                </div>
             </div>
             <p id="autoInput">Sincerely,</p>
             <div id="contactInfo">
