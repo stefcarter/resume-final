@@ -54,14 +54,14 @@ const CoverLetterPage = () => {
         </nav>
 
         
-        <div class="columns">
-            <div class="column">
+        <div class="columns" id="letterBody">
+            <div class="column" id="openerSection">
                 <p id="autoInput">Dear</p>
                 <div id="intro">
                     <textarea class="textarea" placeholder="Company/Recruiter Name" rows="1"></textarea>
                 </div>
             </div>
-            <div class="column">
+            <div class="column" id="introSection">
                 <div class="field">
                     <div class="box" id="openingSuggestions">
                         - Make sure to introduce yourself
@@ -71,7 +71,7 @@ const CoverLetterPage = () => {
                     <textarea class="textarea" id="introParagraph" placeholder="Introductory Paragraph" rows="10"></textarea>
                 </div>
             </div>
-            <div class="column">
+            <div class="column" id="midSection">
                 <div class="field">
                     <div class ="box" id="midParaSuggestions">
                         - Be sure to explain why you would be a good fit for their company
@@ -83,7 +83,7 @@ const CoverLetterPage = () => {
                     <textarea class="textarea" id="middleParagraph" placeholder="Middle Paragraph" rows="10"></textarea>
                 </div>
             </div>
-            <div class="column">
+            <div class="column" id="conclusionSection">
                 <div class="field">
                     <div class="box" id="closingSuggestions">
                         - This paragraph should act as a wrap to your cover letter
@@ -94,9 +94,11 @@ const CoverLetterPage = () => {
                     <textarea class="textarea" id="closingParagraph" placeholder="Closure Paragraph" rows="10"></textarea>
                 </div>
             </div>
-            <p id="autoInput">Sincerely,</p>
-            <div id="contactInfo">
-                <textarea class="textarea" placeholder="User Contact Info" rows="1"></textarea>
+            <div class="column" id="outroSection">
+                <p id="autoInput">Sincerely,</p>
+                <div id="contactInfo">
+                    <textarea class="textarea" placeholder="User Contact Info" rows="1"></textarea>
+                </div>
             </div>
             <div class="field" id="buttons">
                 <input class="button" id="review" type="submit" value="Review Letter"></input>
