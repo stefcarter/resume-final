@@ -47,6 +47,20 @@ background-color: #121212;
 /*Signup page css ends here*/
 
 /*coverLetterPage css starts here*/
+#letterBody{
+  margin-top: 300px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: auto;
+  align-content: flex-start;
+}
+
+div.column{
+  padding: 30px
+}
 
 /*coverLetterPage css ends here*/
 
