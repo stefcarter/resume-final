@@ -52,8 +52,13 @@ background-color: #121212;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: auto;
+  align-content: flex-start;
 }
-div.class{
+
+div.column{
   padding: 30px
 }
 
