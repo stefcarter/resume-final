@@ -11,6 +11,10 @@ section{
 }
 
 /* General Navbar css ends here */
+header{
+  position: absolute;
+}
+
 
 /* Login page css starts here */
 #loginContainerCard{
@@ -79,8 +83,7 @@ div.column{
 /*coverLetterPage css ends here*/
 
 /* Create Page css starts */
-
-#templateNavMenu{
+header{
   bottom: 50px;
   left: 50px;
   top: 150px;

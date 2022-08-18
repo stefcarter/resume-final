@@ -12,7 +12,7 @@ const CoverLetterPage = () => {
 
     return (
 
-    <div className="card bg-white card-rounded w-100 min-80-vh">
+    <div className="card bg-white card-rounded w-100 min-90%-vh">
        <Navbar/>
         <div id="pageBody">
             <div class="columns" id="letterBody">
