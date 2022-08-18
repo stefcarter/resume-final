@@ -14,7 +14,6 @@ const CoverLetterPage = () => {
 
     <div className="card bg-white card-rounded w-100 min-80-vh">
        <Navbar/>
-        
         <div id="pageBody">
             <div class="columns" id="letterBody">
                 <div class="column" id="openerSection">
