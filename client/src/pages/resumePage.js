@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 
 const ResumePage = () => {
 
+
     const { loading, data } = useQuery(QUERY_MATCHUPS,
         {
             fetchPolicy: "no-cache"
@@ -57,6 +58,7 @@ const ResumePage = () => {
             </div>
         </div>
     )
+
 };
 
 
