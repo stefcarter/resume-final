@@ -48,7 +48,7 @@ const Signup = () => {
             ></input>
               <div className="field">
           <label className="label" type="password">
-            Password
+            Validate Password
           </label>
           <div className="control has-icons-left has-icons-right">
             {/* Id for grabbing password is signupPassword */}
@@ -56,7 +56,7 @@ const Signup = () => {
               id="signupPasswordConfirm"
               type="password"
               className="input is-primary"
-              placeholder="Confirm Password"
+              placeholder="Validate Password"
             ></input>
 
 
@@ -87,7 +87,7 @@ const Signup = () => {
       </div>
       <div id="btnContainer">
           <button className="button is-success" id="loginBtn">
-            Login
+            Create Account
           </button>
         </div>
 
