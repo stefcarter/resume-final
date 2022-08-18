@@ -1,10 +1,11 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 const SALT_WORK_FACTOR = 7;
+// import  { resumeSchema } from "./resume"
 
 // const rolesSchema = require("./Role")
 const userSchema = new Schema({
-    username: {
+    name: {
         type: String,
         requied: true,
         unique: true,
@@ -23,13 +24,13 @@ const userSchema = new Schema({
         type: String,
         required: true,
         minlength: 6,
-        match: [/([[a-zA-Z0-9!]])([@#$%^&*])/, 'Password not strong enough']
+        match: [/([a-zA-Z0-9!])([@#$%^&*!])/, 'Password not strong enough']
         // validate 
         // in order to validate/ match the user inputs to the suggested criteria a regex string is
         //  used with the "match" syntax inorder to use the correct grouping filters. 
         // the password regex expression needs work 
     },
-    savedResumes: [resumeSchema]
+    // savedResumes: [resumeSchema]
 });
 
 userSchema.pre('save', function(next) {
@@ -41,7 +42,7 @@ userSchema.pre('save', function(next) {
 
 
     // generate a salt
-    bcrypt.genUser(userSchema, function (err, user) {
+    bcrypt.genSalt(SALT_WORK_FACTOR, function (err, salt) {
         if (err) return next(err);
 
         // hash the password using our new salt
@@ -85,6 +86,6 @@ try{
 
 };
 
-const User = model('user', userSchema);
+const User = model('User', userSchema);
 module.exports = User;
 // add controller folder

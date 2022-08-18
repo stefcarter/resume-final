@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const MongoClient = require('mongodb');
@@ -41,15 +43,16 @@ const startApolloServer = async (typeDefs, resolvers) => {
       await Template.deleteMany({});
 
     const technologies = await Template.insertMany(techData);
+    const users = await User.insertMany(userData);
 
     console.log('Technologies seeded!');
-    res.json(technologies);
-    })
+    res.json({message: "Database Seeded", users, technologies});
+    });
     app.listen(PORT, () => {
       console.log(`API server running on port ${PORT}!`);
       console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
     })
-  })
+  });
   };
 
 
