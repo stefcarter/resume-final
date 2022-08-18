@@ -12,7 +12,7 @@ const ResumePage = () => {
         const matchupList = data?.matchups || [];
 
         return (
-            <div className="card is-shadowless bg-white card-rounded w-100 min-90%-vh">
+            <div className="columns card is-shadowless bg-white card-rounded w-100 min-90%-vh">
             <nav className="navbar" role="navigation" aria-label="main navigation"></nav>
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
@@ -27,33 +27,48 @@ const ResumePage = () => {
                 </div>
 
                 <div class="dropdown is-active">
-  <div class="dropdown-trigger">
-    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-      <span>What Field?</span>
-      <span class="icon is-small">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
+  <div className="dropdown-trigger column">
+    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu">
+      <span>What field are you looking for?</span>
+      <span className="icon is-small">
+        <i className="fas fa-angle-down" aria-hidden="true"></i>
       </span>
     </button>
   </div>
-  <div class="dropdown-menu" id="dropdown-menu" role="menu">
-    <div class="dropdown-content">
-      <a href="#" class="dropdown-item">
+  <div className="dropdown-menu" id="dropdown-menu" role="menu">
+    <div className="dropdown-content">
+      <a href="#" className="dropdown-item">
         Mechanic
       </a>
-      <a class="dropdown-item">
+      <a className="dropdown-item">
         Tech
       </a>
-      <a href="#" class="dropdown-item ">
+      <a href="#" className="dropdown-item ">
         Real Estate
       </a>
-      <a href="#" class="dropdown-item">
+      <a href="#" className="dropdown-item">
         Engineer
       </a>
-     
-     
+      </div>
+     <br>
+     </br>
     </div>
   </div>
-</div>
+  <div className="column">
+    <p>Please choose resume template you would like to use</p>
+    <a>Muse Template</a><figure class="image is-128x128">
+  <img id="muse" src="../images/Muse-Resume.png"></img>
+</figure>
+    <a>Swiss template</a>
+    <figure className="image is-128x128">
+  <img id="swiss" src="../images/Swiss-Resume.png"></img>
+</figure>
+          <a>Coral Template</a>
+    <figure className="image is-128x128">
+  <img id="coral" src="../images/Coral-Resume.png"></img>
+</figure>
+  </div>
+
                 </div>
         )
 };

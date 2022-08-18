@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
 /* General Navbar css starts here */
 .navbarContainer{
   display: block;
   top:0;
 }
 
+section{
+  display: none;
+}
 
 /* General Navbar css ends here */
+header{
+  position: absolute;
+}
+
 
 /* Login page css starts here */
 #loginContainerCard{
@@ -47,8 +56,13 @@ background-color: #121212;
 /*Signup page css ends here*/
 
 /*coverLetterPage css starts here*/
+#pageBody{
+  display: flex;
+  
+}
+
 #letterBody{
-  margin-top: 300px;
+  margin-top: 50px;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -56,17 +70,20 @@ background-color: #121212;
   flex-flow: column wrap;
   overflow: auto;
   align-content: flex-start;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
 }
 
 div.column{
-  padding: 30px
+  padding: 30px;
+  max-width: 1000px;
 }
 
 /*coverLetterPage css ends here*/
 
 /* Create Page css starts */
-
-#templateNavMenu{
+header{
   bottom: 50px;
   left: 50px;
   top: 150px;

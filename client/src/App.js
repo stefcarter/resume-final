@@ -4,19 +4,14 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Signup from './pages/signup';
 import Login from './pages/login';
-
 import ResumePage from './pages/resumePage';
-
-
-
 import CoverLetterPage from './pages/coverLetterPage';
 import LinkedinPage from './pages/linkedinPage';
 import Create from './pages/create';
-
-// import Matchup from './pages/Matchup';
-// import Vote from './pages/Vote';
 import NotFound from './pages/NotFound';
 import 'bulma/css/bulma.min.css'
+
+
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
