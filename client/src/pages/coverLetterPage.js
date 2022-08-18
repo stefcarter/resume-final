@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_MATCHUPS } from '../utils/queries';
-
+import Navbar from "../components/Navbar";
 const CoverLetterPage = () => {
 
     const { loading, data } = useQuery(QUERY_MATCHUPS, {
@@ -13,46 +13,7 @@ const CoverLetterPage = () => {
     return (
 
     <div className="card bg-white card-rounded w-100 min-80-vh">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
-                </a>
-
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div className="navbar-start">
-                    <a className="navbar-item">
-                        Home
-                    </a>
-                    
-                </div>
-            </div>
-
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <Link to =".login">
-                            <button class="button is-primary">
-                                <strong>Sign up</strong>
-                            </button>
-                            </Link>
-                            <Link to = "./signup">
-                            <button class="button is-light">
-                                Log in
-                            </button>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-        </nav>
-
+       <Navbar/>
         
         <div class="columns" id="letterBody">
             <div class="column" id="openerSection">
