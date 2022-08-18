@@ -38,7 +38,7 @@ const Create = () => {
 
   return (
     <div className="card is-shadowless bg-white card-rounded w-100 min-90%-vh">
-      <section>
+      <header>
         <nav class="navbar is-light " id="templateNavMenu" role="navigation" aria-label="dropdown navigation">
           <div class="navbar-item has-dropdown  is-hoverable templateCycle" id="templateDropDown">
             <a class="navbar-item">
@@ -59,7 +59,7 @@ const Create = () => {
             </div>
           </div>
         </nav>
-      </section>
+        </header>
 
       {renderPage()}
 
