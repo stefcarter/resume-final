@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_MATCHUPS } from "../utils/queries";
-
+import Navbar from "../components/Navbar";
 const Linkedin = () => {
     const { loading, data } = useQuery(QUERY_MATCHUPS, {
         fetchPolicy: "no-cache",
@@ -9,6 +9,7 @@ const Linkedin = () => {
 
 return (
     <div className="card bg-white card-rounded w-100 min-90%-vh">
+        <Navbar/>
         <h1>Linkedin Profile</h1>
         <h3>Title</h3>
         <input 
