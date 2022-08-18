@@ -6,6 +6,9 @@
   top:0;
 }
 
+section{
+  display: none;
+}
 
 /* General Navbar css ends here */
 
