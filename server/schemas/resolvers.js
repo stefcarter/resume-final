@@ -36,6 +36,11 @@ const resolvers = {
             };
         },
 
+        createUserNoToken: async (parent, {name, email, password}) => {
+            const user = await User.create({ name, email, password });
+            return user;
+        },
+
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 
