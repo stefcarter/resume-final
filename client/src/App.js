@@ -4,7 +4,6 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Signup from './pages/signup';
 import Login from './pages/login';
-
 import ResumePage from './pages/resumePage';
 
 
