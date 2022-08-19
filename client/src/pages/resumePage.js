@@ -58,8 +58,10 @@ const ResumePage = () => {
     </div> */}
   </div>
   <div className="column">
-    <p>Please choose resume template you would like to use</p>
-    <a>Muse Template</a><figure class="image is-128x128">
+    <p >Please choose resume template you would like to use</p>
+    <br>
+    </br>
+    <a>Muse Template</a><figure className="image is-square">
   <img id="muse" src={Muse}></img>
 </figure>
 <br>
@@ -67,7 +69,7 @@ const ResumePage = () => {
 <br>
 </br>
     <a>Swiss template</a>
-    <figure className="image is-128x128">
+    <figure className="image is-square">
   <img id="swiss" src={Swiss}></img>
 </figure>
 <br>
@@ -75,7 +77,7 @@ const ResumePage = () => {
 <br>
 </br>
           <a>Coral Template</a>
-    <figure className="image is-128x128">
+    <figure className="image is-square">
   <img id="coral" src={Coral}></img>
 </figure>
   </div>
