@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_MATCHUPS } from '../utils/queries';
+import Coral from '../images/Coral-Resume.png';
+import Muse from '../images/Muse-Resume.png';
+import Swiss from '../images/Swiss-Resume.png';
 
 const ResumePage = () => {
     
@@ -27,15 +30,15 @@ const ResumePage = () => {
                 </div>
 
                 <div class="dropdown is-active">
-  <div className="dropdown-trigger column">
+  {/* <div className="dropdown-trigger column">
     <button className="button" aria-haspopup="true" aria-controls="dropdown-menu">
       <span>What field are you looking for?</span>
       <span className="icon is-small">
         <i className="fas fa-angle-down" aria-hidden="true"></i>
       </span>
     </button>
-  </div>
-  <div className="dropdown-menu" id="dropdown-menu" role="menu">
+  </div> */}
+  {/* <div className="dropdown-menu" id="dropdown-menu" role="menu">
     <div className="dropdown-content">
       <a href="#" className="dropdown-item">
         Mechanic
@@ -52,20 +55,28 @@ const ResumePage = () => {
       </div>
      <br>
      </br>
-    </div>
+    </div> */}
   </div>
   <div className="column">
     <p>Please choose resume template you would like to use</p>
     <a>Muse Template</a><figure class="image is-128x128">
-  <img id="muse" src="../images/Muse-Resume.png"></img>
+  <img id="muse" src={Muse}></img>
 </figure>
+<br>
+</br>
+<br>
+</br>
     <a>Swiss template</a>
     <figure className="image is-128x128">
-  <img id="swiss" src="../images/Swiss-Resume.png"></img>
+  <img id="swiss" src={Swiss}></img>
 </figure>
+<br>
+</br>
+<br>
+</br>
           <a>Coral Template</a>
     <figure className="image is-128x128">
-  <img id="coral" src="../images/Coral-Resume.png"></img>
+  <img id="coral" src={Coral}></img>
 </figure>
   </div>
 
