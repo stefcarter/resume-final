@@ -66,14 +66,14 @@ const ResumePage = () => {
     <p >Please choose resume template you would like to use</p>
     <br>
     </br>
-    <a>Muse Template</a><figure className="image is-square">
+    <a href="https://docs.google.com/document/d/1v4OqekDstGXCxovKn1s2DTc8yAA8tNlJ7HLHdk2wha8/edit" target="_blank">Muse Template</a><figure className="image is-square">
   <img id="muse" src={Muse}></img>
 </figure>
 <br>
 </br>
 <br>
 </br>
-    <a>Swiss template</a>
+    <a href="https://docs.google.com/document/d/1WR_axh5A9t1jwER_5mFCIcr5I1oNqm4cB1PHAQEEWqc/edit" target="_blank">Swiss template</a>
     <figure className="image is-square">
   <img id="swiss" src={Swiss}></img>
 </figure>
@@ -81,7 +81,7 @@ const ResumePage = () => {
 </br>
 <br>
 </br>
-          <a>Coral Template</a>
+          <a href="https://docs.google.com/document/d/1YXK0bZ-PysaponGwiT-1lHzQgjRdFzGtJi7-aB2sK9A/edit#" target="_blank" >Coral Template</a>
     <figure className="image is-square">
   <img id="coral" src={Coral}></img>
 </figure>
