@@ -13,10 +13,13 @@ const CoverLetterPage = () => {
     return (
 
     <div className="card bg-white card-rounded w-100 min-90%-vh">
+       <h1 className="is-size-1 has-text-centered"> Cover Letter Creater!</h1>
        <Navbar/>
         <div id="pageBody">
             <div class="columns" id="letterBody">
                 <div class="column" id="openerSection">
+                    
+                    <br></br>
                     <p id="autoInput">Dear</p>
                     <div id="intro">
                         <textarea class="textarea" placeholder="Company/Recruiter Name" rows="1"></textarea>
@@ -62,8 +65,10 @@ const CoverLetterPage = () => {
                     </div>
                 </div>
                 <div class="field" id="buttons">
-                    <input class="button" id="review" type="submit" value="Review Letter"></input>
+                    <input class="button" id="coverletterSubmit" type="submit" value="Export Cover Letter"></input>
                 </div>
+                <br>
+                </br>
             </div>
         </div>
             {loading ? (

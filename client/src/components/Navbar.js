@@ -1,17 +1,21 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import navimage from "../images/logotop.jpg"
 function Navbar(){
 
     return(
+        
         <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img
-              src="https://bulma.io/images/bulma-logo.png"
-              width="112"
-              height="28"
+          <img id="logo"
+              src={navimage}
+              width="150"
+              height="300"
             ></img>
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+         
           </a>
+          
 
           <a
             role="button"
@@ -32,7 +36,7 @@ function Navbar(){
               Home
             </a>
           </div>
-
+         
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">

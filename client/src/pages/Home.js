@@ -16,7 +16,7 @@ const Home = () => {
         <div class="container">
           <div id="navMenu" class="navbar-menu">
             <div class="navbar-start ">
-              <a href="./create" class="navbar-item">
+              <a href="./create" class="navbar-item has-text-centered">
                 Get Started!
               </a>
             </div>
