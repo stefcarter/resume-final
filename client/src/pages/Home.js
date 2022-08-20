@@ -16,9 +16,17 @@ const Home = () => {
         <div class="container">
           <div id="navMenu" class="navbar-menu">
             <div class="navbar-start ">
-              <a href="./create" class="navbar-item has-text-centered">
-                Get Started!
-              </a>
+              
+                <a href="./coverLetterPage" class="navbar-item has-text-centered">
+                  Cover Letter
+                </a>
+                <a href="./ResumePage" class="navbar-item has-text-centered">
+                Resume
+                </a>
+                <a href="/LinkedinPage" class="navbar-item has-text-centered">
+                LinkedIn
+                </a>
+              
             </div>
 
             <div class="navbar-end">

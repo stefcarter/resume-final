@@ -13,8 +13,9 @@ const CoverLetterPage = () => {
     return (
 
     <div className="card bg-white card-rounded w-100 min-90%-vh">
+         <Navbar/>
        <h1 className="is-size-1 has-text-centered"> Cover Letter Creater!</h1>
-       <Navbar/>
+      
         <div id="pageBody">
             <div class="columns" id="letterBody">
                 <div class="column" id="openerSection">

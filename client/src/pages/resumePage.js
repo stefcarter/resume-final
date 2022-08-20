@@ -4,6 +4,7 @@ import { QUERY_MATCHUPS } from '../utils/queries';
 import Coral from '../images/Coral-Resume.png';
 import Muse from '../images/Muse-Resume.png';
 import Swiss from '../images/Swiss-Resume.png';
+import Navbar from "../components/Navbar";
 
 const ResumePage = () => {
     
@@ -17,7 +18,8 @@ const ResumePage = () => {
         return (
             <div className="columns card is-shadowless bg-white card-rounded w-100 min-90%-vh">
             <nav className="navbar" role="navigation" aria-label="main navigation"></nav>
-                <div className="navbar-brand">
+            <Navbar/>
+                {/* <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
                         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
                     </a>
@@ -27,7 +29,7 @@ const ResumePage = () => {
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
-                </div>
+                </div> */}
 
                 <div class="dropdown is-active">
   {/* <div className="dropdown-trigger column">
@@ -57,6 +59,9 @@ const ResumePage = () => {
      </br>
     </div> */}
   </div>
+  <div>
+
+  
   <div className="column">
     <p >Please choose resume template you would like to use</p>
     <br>
@@ -82,7 +87,7 @@ const ResumePage = () => {
 </figure>
   </div>
 
-                </div>
+                </div></div>
         )
 };
 
