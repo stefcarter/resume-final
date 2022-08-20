@@ -18,51 +18,18 @@ const ResumePage = () => {
         return (
             <div className="columns card is-shadowless bg-white card-rounded w-100 min-90%-vh">
             <nav className="navbar" role="navigation" aria-label="main navigation"></nav>
+            <div>
             <Navbar/>
-                {/* <div className="navbar-brand">
-                    <a className="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
-                    </a>
-    
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div> */}
-
+            
+            <h1 className="is-size-1 has-text-centered">Choose Resume Template!</h1>
+            </div>
                 <div class="dropdown is-active">
-  {/* <div className="dropdown-trigger column">
-    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu">
-      <span>What field are you looking for?</span>
-      <span className="icon is-small">
-        <i className="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </div> */}
-  {/* <div className="dropdown-menu" id="dropdown-menu" role="menu">
-    <div className="dropdown-content">
-      <a href="#" className="dropdown-item">
-        Mechanic
-      </a>
-      <a className="dropdown-item">
-        Tech
-      </a>
-      <a href="#" className="dropdown-item ">
-        Real Estate
-      </a>
-      <a href="#" className="dropdown-item">
-        Engineer
-      </a>
-      </div>
-     <br>
-     </br>
-    </div> */}
+  
   </div>
   <div>
 
   
-  <div className="column">
+  <div className="column field" >
     <p >Please choose resume template you would like to use</p>
     <br>
     </br>
