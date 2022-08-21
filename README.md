@@ -28,7 +28,7 @@ Build-A-Career is a React.js web application with fully implemented Mongo.db bac
 
 ## Website
 
->Insert launched heroku website here<
+https://infinite-river-22975.herokuapp.com/signup
 
 ## Github Link
 
@@ -52,11 +52,31 @@ https://docs.google.com/document/d/1GLCu4qDyLBY_B0ZZdc7f3ptJtFMNAB3z5KgFD7aZnIA/
 
 ## Technologies Used
 ```
+React
+
 Bulma React Package
 
 Mongo.db
 
 Apollo
+
+HTML
+
+CSS
+
+JWT
+
+Regex
+
+JSX
+
+Javascript
+
+Mongoose 
+
+GraphQL
+
+Heroku
 ```
 
 ## Capstone Powerpoint

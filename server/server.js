@@ -9,6 +9,8 @@ const path = require('path');
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
+const jwt = require('jsonwebtoken');
+
 const { Template } = require('./models');
 const techData = require('./seeds/techData.json');
 const { authMiddleware } = require('./utils/auth');
