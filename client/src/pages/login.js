@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/client";
 import { QUERY_MATCHUPS } from "../utils/queries";
 import Navbar from "../components/Navbar";
 // Make the navbar for the login and signup page a component
+
 const Login = () => {
   const { loading, data } = useQuery(QUERY_MATCHUPS, {
     fetchPolicy: "no-cache",
