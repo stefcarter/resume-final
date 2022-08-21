@@ -17,14 +17,15 @@ Adam McLane: https://github.com/mclanea92
 Build-A-Career is a React.js web application with fully implemented Mongo.db back-end server. The user is presented with the ability to create a resume, cover letter, and linkedin template/pdfs. Once the user has completed either one of these documents they are then able to export the file as a pdf to their email or local computer. To further push the uses of the app, the user can create an account to revisit past documents for further editing, exportation, ect.
 
 ## Table of Contents
-
-* [Launched-Website]
-* [Github-Launch]
-* [Wireframe]
-* [Front-End-Documentation]
-* [Back-End-Documentation]
-* [Technologies-used]
-* [Capstone-Powerpoint]
+* ![Team-Members](#team-members-credit)
+* ![Description](#description)
+* ![Launched-Website](#website)
+* ![Github-Launch](#github-link)
+* ![Wireframe](#wireframe)
+* ![Front-End-Documentation](#front-end-documentation)
+* ![Back-End-Documentation](#back-end-documentation)
+* ![Technologies-used](#technologies-used)
+* ![Capstone-Powerpoint](#capstone-powerpoint)
 
 ## Website
 
