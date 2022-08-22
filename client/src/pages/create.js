@@ -32,7 +32,7 @@ const Create = () => {
     console.log(event.target.innerText);
     setCurrentPage(event.target.innerText);
     //create an empty template for the default and get rid of the state defaulting to the cover letter
-    //update the current page state to event.target.innerText
+    //update the current page state to even.target.innerText
     //Week 21!!
   }
 
