@@ -4,6 +4,7 @@ import { QUERY_MATCHUPS } from '../utils/queries';
 import Coral from '../images/Coral-Resume.png';
 import Muse from '../images/Muse-Resume.png';
 import Swiss from '../images/Swiss-Resume.png';
+import Navbar from "../components/Navbar";
 
 const ResumePage = () => {
     
@@ -17,58 +18,29 @@ const ResumePage = () => {
         return (
             <div className="columns card is-shadowless bg-white card-rounded w-100 min-90%-vh">
             <nav className="navbar" role="navigation" aria-label="main navigation"></nav>
-                <div className="navbar-brand">
-                    <a className="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
-                    </a>
-    
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-
+            <div>
+            <Navbar/>
+            
+            <h1 className="is-size-1 has-text-centered">Choose Resume Template!</h1>
+            </div>
                 <div class="dropdown is-active">
-  {/* <div className="dropdown-trigger column">
-    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu">
-      <span>What field are you looking for?</span>
-      <span className="icon is-small">
-        <i className="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </div> */}
-  {/* <div className="dropdown-menu" id="dropdown-menu" role="menu">
-    <div className="dropdown-content">
-      <a href="#" className="dropdown-item">
-        Mechanic
-      </a>
-      <a className="dropdown-item">
-        Tech
-      </a>
-      <a href="#" className="dropdown-item ">
-        Real Estate
-      </a>
-      <a href="#" className="dropdown-item">
-        Engineer
-      </a>
-      </div>
-     <br>
-     </br>
-    </div> */}
+  
   </div>
-  <div className="column">
+  <div>
+
+  
+  <div className="column field" >
     <p >Please choose resume template you would like to use</p>
     <br>
     </br>
-    <a>Muse Template</a><figure className="image is-square">
+    <a href="https://docs.google.com/document/d/1v4OqekDstGXCxovKn1s2DTc8yAA8tNlJ7HLHdk2wha8/edit" target="_blank">Muse Template</a><figure className="image is-square">
   <img id="muse" src={Muse}></img>
 </figure>
 <br>
 </br>
 <br>
 </br>
-    <a>Swiss template</a>
+    <a href="https://docs.google.com/document/d/1WR_axh5A9t1jwER_5mFCIcr5I1oNqm4cB1PHAQEEWqc/edit" target="_blank">Swiss template</a>
     <figure className="image is-square">
   <img id="swiss" src={Swiss}></img>
 </figure>
@@ -76,13 +48,13 @@ const ResumePage = () => {
 </br>
 <br>
 </br>
-          <a>Coral Template</a>
+          <a href="https://docs.google.com/document/d/1YXK0bZ-PysaponGwiT-1lHzQgjRdFzGtJi7-aB2sK9A/edit#" target="_blank" >Coral Template</a>
     <figure className="image is-square">
   <img id="coral" src={Coral}></img>
 </figure>
   </div>
 
-                </div>
+                </div></div>
         )
 };
 
