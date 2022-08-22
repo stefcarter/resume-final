@@ -17,16 +17,14 @@ const ResumePage = () => {
 
         return (
             <div className="columns card is-shadowless bg-white card-rounded w-100 min-90%-vh">
-            <nav className="navbar" role="navigation" aria-label="main navigation"></nav>
-            <div>
+            
+            <div className='nav'>
             <Navbar/>
             
             <h1 className="is-size-1 has-text-centered">Choose Resume Template!</h1>
             </div>
-                <div class="dropdown is-active">
-  
-  </div>
-  <div>
+     
+  <div className='card'>
 
   
   <div className="column field" >
