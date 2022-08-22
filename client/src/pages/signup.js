@@ -51,26 +51,27 @@ const Signup = () => {
       <Navbar/>
       <div className="card" id="singupContainerCard">
         <h1> Signup! </h1>
-        {/* <div className="field">
-          <label className="label">Email</label>
-          <div className="control has-icons-left has-icons-right"> */}
-            {/* id for grabbing email is signupEmail */}
-            {/* <input
-              // id="signupEmail"
-              className="input is-primary"
-              type="text"
-              placeholder="Email"
-              value={formState.name}
-              onChange={handleChange}
-            ></input>
-            <span className="icon is-small is-left">
-              <i className="fas fa-envelope"></i>
-            </span>
-            <span className="icon is-small is-right">
-              <i className="fas fa-exclamation-triangle"></i>
-            </span>
-          </div>
-        </div> */}
+        <div className="field">
+        <label className="label">Username</label>
+        <div className="control has-icons-left has-icons-right">
+          {/* id for grabbing email is userName  */}
+          <input
+            id="userName"
+            className="input is-primary"
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formState.username}
+            onChange={handleChange}
+          ></input>
+          <span className="icon is-small is-left">
+            <i className="fas fa-envelope"></i>
+          </span>
+          <span className="icon is-small is-right">
+            <i className="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      </div>
 
         <div className="field">
           <label className="label">Email</label>
