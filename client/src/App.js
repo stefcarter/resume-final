@@ -52,10 +52,6 @@ function App() {
               element={<ResumePage />}
               />
             <Route
-              path ="exportPage"
-              element={<resumepage />}
-              />
-            <Route
               path ="userPage"
               element={<user />}
               />

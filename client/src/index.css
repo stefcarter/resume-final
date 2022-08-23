@@ -19,6 +19,9 @@ header{
   position: absolute;
 }
 
+.templateScreech{
+  position:absolute;
+}
 
 /* Login page css starts here */
 #loginContainerCard{
@@ -99,11 +102,16 @@ header{
   border-radius: 5px;
 }
 
-
-
-
-
 /* Create Page css starts */
+
+/* resume page css starts */
+.columns{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 15%;
+  }
+/* resueme page css ends */
 
 /*Loading skeleton CSS*/
 
