@@ -16,17 +16,19 @@ const Home = () => {
         <div class="container">
           <div id="navMenu" class="navbar-menu">
             <div class="navbar-start ">
-              
-                <a href="./coverLetterPage" class="navbar-item has-text-centered">
-                Cover Letter
-                </a>
-                <a href="./ResumePage" class="navbar-item has-text-centered">
-                Resume
-                </a>
-                <a href="/LinkedinPage" class="navbar-item has-text-centered">
+              <Link to='/coverLetterPage'>
+                <button class="button is-info is-light">Cover Letter</button>
+              </Link>
+              <Link to='/resumePage'>
+                    <button class="button is-info is-light">Resume</button>
+                  </Link>
+                  <Link to='/linkedinPage'>
+                    <button class="button is-info is-light">Log in</button>
+                  </Link>
+              <a href="/linkedinPage" class="navbar-item has-text-centered">
                 LinkedIn
-                </a>
-              
+              </a>
+
             </div>
 
             <div class="navbar-end">
