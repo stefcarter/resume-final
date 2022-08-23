@@ -9,14 +9,12 @@ function Navbar(){
           <img id="logo"
               src={navimage}
               width="150"
-              height="200"
+              height="300"
+              alt="logopic"
             ></img>
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-         
           </a>
-          
-
           <a
             role="button"
             class="navbar-burger"

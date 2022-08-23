@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_MATCHUPS } from "../utils/queries";
 import Navbar from "../components/Navbar";
+import { CREATE_MATCHUP } from '../utils/mutations';
 
 const Signup = () => {
   // const { loading, data } = useQuery(QUERY_MATCHUPS, {

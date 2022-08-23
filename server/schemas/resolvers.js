@@ -1,14 +1,18 @@
 // create mutation function/object
-const { User } = require('../models');
+const { User, Matchup } = require('../models');
 const { ObjectId } = require('mongoose').Types;
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
     Query: {
-
         users: async () => {
             return User.find({});
+        },
+
+        matchups: async (parent, { _id }) => {
+            const params = _id ? { _id } : {};
+            return Matchup.find(params);
         },
 
         user: async (parent, { _id }) => {
@@ -25,6 +29,11 @@ const resolvers = {
     },
 
     Mutation: {
+
+        createMatchup: async (parent, args) => {
+            const matchup = await Matchup.create(args);
+            return matchup;
+        },
         
         createUser: async (parent, { name, email, password }) => {
             const user = await User.create({ name, email, password });
