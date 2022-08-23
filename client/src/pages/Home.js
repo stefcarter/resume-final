@@ -18,7 +18,7 @@ const Home = () => {
             <div class="navbar-start ">
               
                 <a href="./coverLetterPage" class="navbar-item has-text-centered">
-                  Cover Letter
+                Cover Letter
                 </a>
                 <a href="./ResumePage" class="navbar-item has-text-centered">
                 Resume
@@ -30,7 +30,7 @@ const Home = () => {
             </div>
 
             <div class="navbar-end">
-              
+
               <div class="navbar-item">
                 <div class="buttons">
                   <Link to='/login'>
