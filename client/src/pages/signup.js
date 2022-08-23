@@ -30,7 +30,10 @@ const Signup = () => {
       [name]: value,
     });
   };
+  // const renderGreeting = () => {
+  //   if ( username ++ signupPa)
 
+  // };
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
