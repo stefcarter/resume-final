@@ -1,11 +1,12 @@
 import React from 'react';
 
-const coverLetterPrintout = (props) => {
-
+const CoverLetterPrintout = (props) => {
+    console.log(props);
     return (
 
-        <div className="card text-center">
-            <h5 className= "is-size-3" style="companyName">
+        <div className="card text-center" id="cvPDF">
+            <p id="autoInput">Dear</p>
+            <h5 className= "is-size-5">
             {props.CVInfo.greetings}
             </h5>
             <div className="cardBody">
@@ -18,9 +19,13 @@ const coverLetterPrintout = (props) => {
                 <p className="cardParagraphThree">
                 {props.CVInfo.closingParagraph}
                 </p>
+                <p id="autoInput">Sincerely,</p>
+                <p className="contactInfo">
+                    {props.CVInfo.contactInfo}
+                </p>
             </div>
         </div>
     );
 };
 
-export default coverLetterPrintout;
+export default CoverLetterPrintout;
