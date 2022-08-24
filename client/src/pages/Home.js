@@ -34,7 +34,7 @@ const Home = () => {
       <section class="hero is-link is-fullheight-with-navbar">
         <div class="hero-body">
           <p class="title">
-            Career Planner
+            Build-A-Career 
           </p>
 
           {/* <p>
