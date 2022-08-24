@@ -16,11 +16,10 @@ const Home = () => {
                     <button class="button is-info is-light">Resume</button>
                   </Link>
                   <Link to='/linkedinPage'>
-                    <button class="button is-info is-light">Log in</button>
+                    <button class="button is-info is-light">Linkedin</button>
                   </Link>
-              <a href="/linkedinPage" class="navbar-item has-text-centered">
-                LinkedIn
-              </a>
+           
+              
 
             </div>
  
