@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import navimage from "../images/logotop.jpg"
+import navimage from "../images/logotop.jpg";
+
 function Navbar(){
 
     return(
@@ -8,8 +9,6 @@ function Navbar(){
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <img id="logo"
               src={navimage}
-              width="150"
-              height="300"
               alt="logopic"
             ></img>
         <div class="navbar-brand">
@@ -28,9 +27,9 @@ function Navbar(){
           </a>
         </div>
         {/* Is the home going to take the user to landing page or the create page? Carter says the landing page for now */}
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbarBasicExample" class="navbar-menu has-background-grey-lighter">
           <div class="navbar-start">
-            <a href="./" class="navbar-item is-info is-outlined">
+            <a href="./" class="navbar-item is-info is-outlined ">
               Home
             </a>
           </div>
@@ -40,12 +39,12 @@ function Navbar(){
               <div class="buttons">
 
                 <Link to="/login">
-                  <button class="button is-info is-light">
+                  <button class="button is-info is-light mr-4 " id = "credentialBtn1"> 
                     <strong>Log in</strong>
                   </button>
                 </Link>
                 <Link to="/signup">
-                  <button class="button is-info">Create Account</button>
+                  <button class="button is-info" id = "credentialBtn2">Create Account</button>
                 </Link>
               </div>
             </div>

@@ -1,77 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
 
 /* General Navbar css starts here */
-.navbarContainer{
+.navbarContainer {
   display: block;
-  top:0;
+  top: 0;
 }
+#homeNavBarContainer{
+  left: 275px;
+}
+#homeNav{
+height: 75px;
 
-section{
+}
+section {
   display: none;
 }
+#logo{
+position:relative;
+height: 75px;
+width: 75px;
+border-radius: 100% ;
+}
 
-/* #logo{
+#btnHomeNav {
+  top: 20px;
+}
 
-} */
+#credentialsBtn1,
+#credentialsBtn2 {
+  margin-right: 10px;
+}
 
 /* General Navbar css ends here */
-header{
+
+/* logo css starts here */
+
+/* logo css ends here*/
+
+header {
   position: absolute;
 }
 
-.templateScreech{
-  position:absolute;
+.templateScreech {
+  position: absolute;
 }
 
 /* Login page css starts here */
-#loginContainerCard{
-max-width: 550px;
-margin: auto;
-margin-top: 100px;
-padding-bottom: 40px;
-padding-top: 50px;
-padding-right: 50px;
-padding-left: 50px;
+#loginContainerCard {
+  max-width: 550px;
+  margin: auto;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-#btnContainer{
+#btnContainer {
   padding-top: 20px;
 }
 
 /* Login page css ends here */
 
 /*Signup page css starts here*/
-#singupContainerCard{
-max-width: 550px;
-margin: auto;
-margin-top: 100px;
-padding-bottom: 40px;
-padding-top: 50px;
-padding-right: 50px;
-padding-left: 50px;
+#singupContainerCard {
+  max-width: 550px;
+  margin: auto;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-#signUpBody{
-background-color: #121212;
-
+#signUpBody {
+  background-color: #121212;
 }
 
-#signupContainerBtn{
+#signupContainerBtn {
   padding-top: 20px;
 }
 
 /*Signup page css ends here*/
 
 /*coverLetterPage css starts here*/
-#pageBody{
+#pageBody {
   display: flex;
-  
 }
 
-#letterBody{
+#letterBody {
   margin-top: 50px;
   padding-top: 50px;
-  padding-left: 50px;
+  padding-left: 600px;
   padding-right: 50px;
   display: flex;
   flex-flow: column wrap;
@@ -82,37 +102,61 @@ background-color: #121212;
   position: relative;
 }
 
-div.column{
+div.column {
   padding: 30px;
   max-width: 1000px;
 }
 
-.coverhead{
-size: 50px;
-};
+.coverhead {
+  size: 50px;
+}
 
 /*coverLetterPage css ends here*/
 
 /* Create Page css starts */
-header{
+header {
   bottom: 50px;
   left: 50px;
   top: 150px;
-  max-width:fit-content;
+  max-width: fit-content;
   border-radius: 5px;
 }
 
 /* Create Page css starts */
 
 /* resume page css starts */
-.columns{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 15%;
-  }
+#letterBody {
+  background-color: #b3cae4;
+}
+
+#resumeColumnContainer{
+
+margin-left: 300px;
+
+}
+#coverLetterSubmit {
+  margin-left: 250px;
+}
 /* resueme page css ends */
+
+/* Linkedin page css starts here */
+#linkedinContainer{
+  max-width: 600px;
+}
+
+#linkedinSubmitBtn{
+  margin-top: 25px;
+}
+/* Linkedin page css ends */
 
 /*Loading skeleton CSS*/
 
 /* Media Queries here */
+
+#bodyHolder,
+#coverLetterBody,
+#resumeCardContainer,
+#createHolder{
+  background-color: #b3cae4;
+
+}

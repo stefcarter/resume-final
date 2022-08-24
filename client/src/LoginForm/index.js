@@ -1,10 +1,10 @@
 import React, {useState, useReducer} from 'react';
 import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../../utils/mutations';
-import Auth from '../../utils/auth';
+import { LOGIN_USER } from '../utils/mutations';
+import Auth from '../utils/auth';
 import { useNavigate } from 'react-router-dom';
-import { useUser } from '../../context/UserContext';
-import reducer from '../../context/reducers';
+import { useUser } from '../context/UserContext';
+import reducer from '../context/reducers';
 
 const LoginForm = () => {
   const [login, { error, data }] = useMutation(LOGIN_USER);
