@@ -10,7 +10,7 @@ function Navbar(){
           <img id="logo"
               src={navimage}
               alt="logopic"
-            ></img>
+          ></img>
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
           </a>
@@ -27,7 +27,7 @@ function Navbar(){
           </a>
         </div>
         {/* Is the home going to take the user to landing page or the create page? Carter says the landing page for now */}
-        <div id="navbarBasicExample" class="navbar-menu has-background-grey-lighter">
+        <div id="navbarBasicExample" class="navbar-menu ">
           <div class="navbar-start">
             <a href="./" class="navbar-item is-info is-outlined ">
               Home
@@ -39,12 +39,12 @@ function Navbar(){
               <div class="buttons">
 
                 <Link to="/login">
-                  <button class="button is-info is-light mr-4 " id = "credentialBtn1"> 
-                    <strong>Log in</strong>
+                  <button class="button is-info is-light mr-1 " id = "credentialBtn1"> 
+                    Log in
                   </button>
                 </Link>
                 <Link to="/signup">
-                  <button class="button is-info" id = "credentialBtn2">Create Account</button>
+                  <button class="button is-info ml-1" id = "credentialBtn2">Create Account</button>
                 </Link>
               </div>
             </div>
