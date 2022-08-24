@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import CoverLetterPage from './coverLetterPage';
 import ResumePage from './resumePage';
 import LinkedinPage from './linkedinPage';
@@ -55,10 +54,6 @@ const Create = () => {
         </header>
 
       {renderPage()}
-
-
-
-     
     </div>
   );
 };
