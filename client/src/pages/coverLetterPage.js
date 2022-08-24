@@ -17,7 +17,7 @@ const handleCVFormChange = (e) =>{
         ...preState,
         [e.target.id]: e.target.value
     }))
-
+}
 
 const exportCVPDF = async () =>{
     const pdf = new jsPDF("portrait","pt","a4");
@@ -100,5 +100,5 @@ const exportCVPDF = async () =>{
 </div>
 );
 };
-}
+
 export default CoverLetterPage;
