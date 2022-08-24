@@ -34,6 +34,7 @@ const handleFormSubmit = async (event) => {
     });
     console.log(data);
     Auth.login(data.login.token);
+    
   } catch (e) {
     console.error(e);
   }
