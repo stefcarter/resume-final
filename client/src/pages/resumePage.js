@@ -7,46 +7,48 @@ import Navbar from "../components/Navbar";
 
 const ResumePage = () => {
 
-        return (
-            <div className="columns card is-shadowless bg-white card-rounded w-100 min-90%-vh">
-            
-            <div className='nav'>
-            <Navbar/>
-            
-            <h1 className="is-size-1 has-text-centered">Choose Resume Template!</h1>
-            </div>
-     
-  <div className='card'>
-
-  
-  <div className="column field" >
-    <p >Please choose resume template you would like to use</p>
-    <br>
-    </br>
-    <a href="https://docs.google.com/document/d/1v4OqekDstGXCxovKn1s2DTc8yAA8tNlJ7HLHdk2wha8/edit" target="_blank">Muse Template</a><figure className="image is-square">
-  <img id="muse" src={Muse}></img>
-</figure>
-<br>
-</br>
-<br>
-</br>
-    <a href="https://docs.google.com/document/d/1WR_axh5A9t1jwER_5mFCIcr5I1oNqm4cB1PHAQEEWqc/edit" target="_blank">Swiss template</a>
-    <figure className="image is-square">
-  <img id="swiss" src={Swiss}></img>
-</figure>
-<br>
-</br>
-<br>
-</br>
+  return (
+    <div className="card is-shadowless bg-white card-rounded w-100% min-90%-vh">
+       <Navbar />
+      <div className='card columns is-shadowless'>
+        <div className = "card is-shadowless has-text-centered" id = 'resumeCardContainer'>
+        <div className="column" >
+          <h1 className="is-size-2 has-text-centered">Choose Resume Template!</h1>
+          <p >Please choose resume template you would like to use</p>
+          <br>
+          </br>
+        </div>
+        {/* Add pagnation for these resumes so it cycles through them also style dem they are HUGE >:c */}
+        <div className="column">
+          <a href="https://docs.google.com/document/d/1v4OqekDstGXCxovKn1s2DTc8yAA8tNlJ7HLHdk2wha8/edit" target="_blank">Muse Template</a>
+          <figure className="image is-square">
+            <img id="muse" src={Muse}></img>
+          </figure>
+          <br>
+          </br>
+        </div>
+        <div className="column">
+          <br>
+          </br>
+          <a href="https://docs.google.com/document/d/1WR_axh5A9t1jwER_5mFCIcr5I1oNqm4cB1PHAQEEWqc/edit" target="_blank">Swiss template</a>
+          <figure className="image is-square">
+            <img id="swiss" src={Swiss}></img>
+          </figure>
+          <br>
+          </br>
+        </div>
+        <div className="column">
+          <br>
+          </br>
           <a href="https://docs.google.com/document/d/1YXK0bZ-PysaponGwiT-1lHzQgjRdFzGtJi7-aB2sK9A/edit#" target="_blank" >Coral Template</a>
-    <figure className="image is-square">
-  <img id="coral" src={Coral}></img>
-</figure>
-  </div>
+          <figure className="image is-square">
+            <img id="coral" src={Coral}></img>
+          </figure>
+        </div>
+      </div>
+    </div>
+    </div>
 
-                </div></div>
-        )
+  )
 };
-
-
 export default ResumePage;
