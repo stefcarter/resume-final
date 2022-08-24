@@ -17,7 +17,7 @@ const handleCVFormChange = (e) =>{
         ...preState,
         [e.target.id]: e.target.value
     }))
-}
+
 
 const exportCVPDF = async () =>{
     const pdf = new jsPDF("portrait","pt","a4");
@@ -29,7 +29,7 @@ const exportCVPDF = async () =>{
     pdf.addImage(img, "PNG", 0, 0, pdfWidth, pdfHeight);
     pdf.save("coverLetter.pdf");
 }
-let CVInfo = {introParagraph : "I like cheese"} ;
+
 
     return (
 
@@ -100,5 +100,5 @@ let CVInfo = {introParagraph : "I like cheese"} ;
 </div>
 );
 };
-
+}
 export default CoverLetterPage;

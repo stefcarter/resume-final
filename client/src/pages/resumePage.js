@@ -4,6 +4,7 @@ import Muse from '../images/Muse-Resume.png';
 import Swiss from '../images/Swiss-Resume.png';
 import Navbar from "../components/Navbar";
 
+
 const ResumePage = () => {
   
 const resumeStyling={
