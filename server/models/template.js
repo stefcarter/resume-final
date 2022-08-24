@@ -1,26 +1,19 @@
 const { Schema, model } = require('mongoose');
 
+//Line 4 is the example for template!!
+// const temp = "My static connect is interlaced with my {input1} fields. {input0} is the first input field in my collection. {input1} can be re-used."
+
 const templateSchema = new Schema({
-  
-    title: {
-      type: Objectid,
-      required: true,
-      unique: true,
-    },
-
-  // ? handlebars like template
-  // My static connect is interlaced with my {input1} fields.
-  // {input0} is the first input field in my collection. {input1} can be re-used.
-  //
-
-  // input fields that the user will be interacting with will be connecting to this. 
-  inputField: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'inputField'
-    }
-  ]
-
+  title:{
+    type: String,
+    unique: true,
+    required: true
+  },
+  temp:{
+    type: String, 
+    required: true
+  }
+//change the name of the file to : Template instead!!
 });
 
 const Template = model('Template', templateSchema);
