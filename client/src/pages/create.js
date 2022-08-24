@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-
 import CoverLetterPage from './coverLetterPage';
 import ResumePage from './resumePage';
 import LinkedinPage from './linkedinPage';
-import { useState } from "react";
-import Navbar from "../components/Navbar";
+import { useState } from "react"; 
 
 const Create = () => {
  
@@ -32,7 +30,7 @@ const Create = () => {
   }
 
   return (
-    <div className="card is-shadowless bg-white card-rounded w-100 min-90%-vh">
+    <div className="card is-shadowless card-rounded w-100% min-90%-vh">
       <header>
         <nav class="navbar is-light " id="templateNavMenu" role="navigation" aria-label="dropdown navigation">
           <div class="navbar-item has-dropdown  is-hoverable templateCycle" id="templateDropDown">
