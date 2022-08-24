@@ -28,6 +28,11 @@ class AuthService {
     return localStorage.getItem('id_token');
   }
 
+  createUser() {
+    // localStorage.setItem('id_token', idToken);
+    window.location.assign('/');
+  }
+
   login(idToken) {
     localStorage.setItem('id_token', idToken);
     window.location.assign('/');
