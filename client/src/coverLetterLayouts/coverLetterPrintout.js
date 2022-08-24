@@ -6,21 +6,27 @@ const CoverLetterPrintout = (props) => {
 
         <div className="card text-center" id="cvPDF">
             <p id="autoInput">Dear</p>
-            <h5 className= "is-size-5">
+            <h5 id="cover1" className= "is-size-6">
             {props.CVInfo.greetings}
+            <br></br>
             </h5>
             <div className="cardBody">
-                <p className="cardParagraphOne">
+                <p id="cover2" className="cardParagraphOne">
                 {props.CVInfo.introParagraph}
                 </p>
-                <p className="cardParagraphTwo">
+                <br></br>
+                <p id="cover3" className="cardParagraphTwo">
                 {props.CVInfo.middleParagraph}
                 </p>
-                <p className="cardParagraphThree">
+                <br>
+                </br>
+                <p id="cover4" className="cardParagraphThree">
                 {props.CVInfo.closingParagraph}
                 </p>
+                <br>
+                </br>
                 <p id="autoInput">Sincerely,</p>
-                <p className="contactInfo">
+                <p id="cover5" className="contactInfo">
                     {props.CVInfo.contactInfo}
                 </p>
             </div>

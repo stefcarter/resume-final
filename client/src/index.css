@@ -160,3 +160,16 @@ margin-left: 300px;
   background-color: #b3cae4;
 
 }
+
+/* coverletterprintout page css start */
+#cvPDF {
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+}
+
+
+
+
+/* coverletterprintout page css end */
