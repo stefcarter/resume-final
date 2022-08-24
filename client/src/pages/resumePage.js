@@ -1,19 +1,11 @@
 import { Link } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
-import { QUERY_MATCHUPS } from '../utils/queries';
+
 import Coral from '../images/Coral-Resume.png';
 import Muse from '../images/Muse-Resume.png';
 import Swiss from '../images/Swiss-Resume.png';
 import Navbar from "../components/Navbar";
 
 const ResumePage = () => {
-
-  const { loading, data } = useQuery(QUERY_MATCHUPS,
-    {
-      fetchPolicy: "no-cache"
-    });
-
-  const matchupList = data?.matchups || [];
 
   return (
     <div className="card is-shadowless bg-white card-rounded w-100% min-90%-vh">

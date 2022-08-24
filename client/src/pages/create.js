@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { useQuery } from "@apollo/client";
-import { QUERY_MATCHUPS } from "../utils/queries";
+
 import CoverLetterPage from './coverLetterPage';
 import ResumePage from './resumePage';
 import LinkedinPage from './linkedinPage';
@@ -8,13 +7,9 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 const Create = () => {
-  const { loading, data } = useQuery(QUERY_MATCHUPS, {
-    fetchPolicy: "no-cache",
-  });
-
-  const [currentPage, setCurrentPage] = useState("Cover Letter")
-
-  const matchupList = data?.matchups || [];
+ 
+  const [ currentPage, setCurrentPage ] = useState();
+ 
 
   const renderPage = () => {
     if (currentPage === 'Cover Letter') {
@@ -65,21 +60,7 @@ const Create = () => {
 
 
 
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        <ul className="square">
-          {matchupList.map((matchup) => {
-            return (
-              <li key={matchup._id}>
-                <Link to={{ pathname: `/matchup/${matchup._id}` }}>
-                  {matchup.tech1} vs. {matchup.tech2}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      )}
+     
     </div>
   );
 };

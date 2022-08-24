@@ -10,11 +10,6 @@ const resolvers = {
             return User.find({});
         },
 
-        matchups: async (parent, { _id }) => {
-            const params = _id ? { _id } : {};
-            return Matchup.find(params);
-        },
-
         user: async (parent, { _id }) => {
             return User.findOne({ _id: ObjectId(_id) });
         },
@@ -29,11 +24,6 @@ const resolvers = {
     },
 
     Mutation: {
-
-        createMatchup: async (parent, args) => {
-            const matchup = await Matchup.create(args);
-            return matchup;
-        },
         
         createUser: async (parent, { name, email, password }) => {
             const user = await User.create({ name, email, password });
