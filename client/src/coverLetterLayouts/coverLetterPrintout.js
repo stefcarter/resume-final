@@ -1,22 +1,26 @@
 import React from 'react';
-import DefaultPage from '../coverLetterLayouts/DefaultPage';
-
 
 const coverLetterPrintout = (props) => {
 
     return (
 
-        <div className="card">
+        <div className="card text-center">
+            <h5 className= "is-size-3" style="companyName">
+            {props.CVInfo.greetings}
+            </h5>
             <div className="cardBody">
-                <h5 className styel="oppName"></h5>
-            </div>
-            <div className="cardParagraph">
-
-
-            
+                <p className="cardParagraphOne">
+                {props.CVInfo.introParagraph}
+                </p>
+                <p className="cardParagraphTwo">
+                {props.CVInfo.middleParagraph}
+                </p>
+                <p className="cardParagraphThree">
+                {props.CVInfo.closingParagraph}
+                </p>
             </div>
         </div>
     );
-
 };
+
 export default coverLetterPrintout;
