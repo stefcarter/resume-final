@@ -2,12 +2,6 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
 
-    type Matchup {
-        _id: ID!
-        form1: String!
-        form2: String!
-    }
-
 
     type User {
         _id: ID!
@@ -29,7 +23,6 @@ const typeDefs = gql`
     }
 
     type Mutation {
-        createMatchup(form1: String!, form2: String!): Matchup
 
         createUser(name: String!, email: String!, password: String!): TokenUser
         createUserNoToken(name: String!, email: String!, password: String!): User
