@@ -80,7 +80,8 @@ let CVInfo = {introParagraph : "I like cheese"} ;
                     </div>
                 </div>
                 <div className="column" id="outroSection">
-                    <p id="autoInput">Sincerely,</p>
+                    <p id="autoInput">Sincerely, (Dont forget to add your name, job title &
+                     email/phone Number)</p>
                     <div id="contactInfo">
                         <textarea type= "contactInfo" id= "contactInfo" class="textarea" placeholder=" Your name
                     Your job title
